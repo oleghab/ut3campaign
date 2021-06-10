@@ -1,0 +1,32 @@
+digraph act5 {
+    node [shape=none]
+
+    map1 [label="CTF-OmicronDawn\nCharacter: Loque", fontcolor="red"]
+    map1 -> map2
+    
+    map2 [label="vCTF-Sandstorm"]
+    map2 -> {route51 route52}
+    
+    route51 [label="DM-Sanctuary"]
+    route51 -> map3
+    
+    map3 [label="DM-Fearless"]
+    map3 -> back5
+    
+    route52 [label="DM-Fearless"]
+    route52 -> map4
+    
+    map4 [label="DM-Sanctuary"]
+    map4 -> back5
+    
+    back5 [label="vCTF-Necropolis\nCard: Instagib", fontcolor="red"]
+    back5 -> map5
+    
+    map5 [label="CTF-Vertebrae"]
+    map5 -> map6
+    
+    map6 [label="WAR-Floodgate"]
+    map6 -> final
+    
+    final [label="DM-Sentinel\nCharacter: Akasha", fontcolor="red"]
+}
