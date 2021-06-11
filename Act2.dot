@@ -1,14 +1,14 @@
 digraph act2 {
-    map0 [label="DM-RisingSun"]
+    map0 [label="DM-RisingSun\nTutorial: Basics", fontcolor="blue"]
     map0 -> map1
 
     map1 [label="DM-ShangriLa"]
     map1 -> map2
     
-    map2 [label="CTF-Reflection"]
+    map2 [label="CTF-Reflection\nTutorial: CTF", fontcolor="blue"]
     map2 -> map3
     
-    map3 [label="WAR-Sinkhole"]
+    map3 [label="WAR-Sinkhole\nTutorial: Basic warfare", fontcolor="blue"]
     map3 -> map4
     
     map4 [label="WAR-MarketDistrict"]
@@ -18,19 +18,19 @@ digraph act2 {
     map5 -> map6
     
     map6 [label="vCTF-Kargo\nCard: Tactical Diversion", fontcolor="red"]
-    map6 -> {route2_1 route2_2}
+    map6 -> {route21 route22}
     
-    route2_1 [label="CTF-Hydrosis"]
-    route2_1 -> {route2_1_1 route2_1_2}
+    route21 [label="CTF-Hydrosis"]
+    route21 -> {route211 route212}
     
-    route2_1_1 [label="vCTF-Suspense"]
-    route2_1_1 -> map7
+    route211 [label="vCTF-Suspense"]
+    route211 -> map7
     
     map7 [label="WAR-Downtown"]
-    map7 -> {route2_1_1_1 route2_1_1_2}
+    map7 -> {route2111 route2112}
     
-    route2_1_1_1 [label="DM-Defiance"]
-    route2_1_1_1 -> map8
+    route2111 [label="DM-Defiance"]
+    route2111 -> map8
     
     map8 [label="WAR-Serenity\nCard: Iron Guard Reinforcements", fontcolor="red"]
     map8 -> map9
@@ -39,100 +39,100 @@ digraph act2 {
     map9 -> map10
     
     map10 [label="DM-Diesel"]
-    map10 -> map31
+    map10 -> map11
     
-    map31 [label="WAR-Torlan"]
-    map31 -> end
+    map11 [label="WAR-Torlan"]
+    map11 -> end
     
-    route2_1_1_2 [label="DM-Diesel\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
-    route2_1_1_2 -> map11
+    route2112 [label="DM-Diesel\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
+    route2112 -> map12
     
-    map11 [label="vCTF-Kargo"]
-    map11 -> map12
-    
-    map12 [label="WAR-Serenity"]
+    map12 [label="vCTF-Kargo"]
     map12 -> map13
     
-    map13 [label="WAR-Torlan"]
-    map13 -> end
+    map13 [label="WAR-Serenity"]
+    map13 -> map14
     
-    route2_1_2 [label="WAR-Torlan"]
-    route2_1_2 -> map14
+    map14 [label="WAR-Torlan"]
+    map14 -> end
     
-    map14 [label="vCTF-Suspense"]
-    map14 -> map15
+    route212 [label="WAR-Torlan"]
+    route212 -> map15
     
-    map15 [label="WAR-Serenity"]
+    map15 [label="vCTF-Suspense"]
     map15 -> map16
     
-    map16 [label="WAR-Downtown"]
-    map16 -> {route2_1_2_1 route2_1_1_2}
+    map16 [label="WAR-Serenity"]
+    map16 -> map17
     
-    route2_1_2_1 [label="DM-Defiance"]
-    route2_1_2_1 -> map17
+    map17 [label="WAR-Downtown"]
+    map17 -> {route2121 route2112}
     
-    map17 [label="WAR-Torlan"]
-    map17 -> map18
+    route2121 [label="DM-Defiance"]
+    route2121 -> map18
     
-    map18 [label="vCTF-Kargo"]
+    map18 [label="WAR-Torlan"]
     map18 -> map19
     
-    map19 [label="DM-Defiance"]
-    map19 -> end
+    map19 [label="vCTF-Kargo"]
+    map19 -> map20
     
-    route2_2 [label="WAR-Torlan"]
-    route2_2 -> map20
+    map20 [label="DM-Defiance"]
+    map20 -> end
     
-    map20 [label="CTF-Hydrosis"]
-    map20 -> {route2_2_1 route2_2_2}
+    route22 [label="WAR-Torlan"]
+    route22 -> map21
     
-    route2_2_1 [label="vCTF-Suspense"]
-    route2_2_1 -> map21
+    map21 [label="CTF-Hydrosis"]
+    map21 -> {route221 route222}
     
-    map21 [label="WAR-Downtown"]
-    map21 -> map22
+    route221 [label="vCTF-Suspense"]
+    route221 -> map22
     
-    map22 [label="DM-Defiance"]
-    map22 -> {route2_2_1_1 map32}
+    map22 [label="WAR-Downtown"]
+    map22 -> map23
     
-    map32 [label="DM-Diesel"]
-    map32 -> map11
+    map23 [label="DM-Defiance"]
+    map23 -> {route2211 map33}
     
-    route2_2_1_1 [label="WAR-Serenity"]
-    route2_2_1_1 -> map23
+    map33 [label="DM-Diesel"]
+    map33 -> map12
     
-    map23 [label="vCTF-Kargo"]
-    map23 -> map24
+    route2211 [label="WAR-Serenity"]
+    route2211 -> map24
     
-    map24 [label="WAR-Torlan"]
-    map24 -> end
+    map24 [label="vCTF-Kargo"]
+    map24 -> map25
     
-    route2_2_2 [label="WAR-Serenity"]
-    route2_2_2 -> map25
+    map25 [label="WAR-Torlan"]
+    map25 -> end
     
-    map25 [label="vCTF-Suspense"]
-    map25 -> map26
+    route222 [label="WAR-Serenity"]
+    route222 -> map26
     
-    map26 [label="WAR-Downtown"]
-    map26 -> {route2_2_2_1 route2_2_2_2}
+    map26 [label="vCTF-Suspense"]
+    map26 -> map27
     
-    route2_2_2_1 [label="DM-Defiance"]
-    route2_2_2_1 -> map27
+    map27 [label="WAR-Downtown"]
+    map27 -> {route2221 route2222}
     
-    map27 [label="vCTF-Kargo"]
-    map27 -> map28
+    route2221 [label="DM-Defiance"]
+    route2221 -> map28
     
-    map28 [label="WAR-Serenity\nCard: Iron Guard Reinforcements", fontcolor="red"]
-    map28 -> end
+    map28 [label="vCTF-Kargo"]
+    map28 -> map29
     
-    route2_2_2_2 [label="DM-Diesel\nCharacter: Lauren", fontcolor="red"]
-    route2_2_2_2 -> map29
+    map29 [label="WAR-Serenity\nCard: Iron Guard Reinforcements", fontcolor="red"]
+    map29 -> end
     
-    map29 [label="vCTF-Kargo"]
-    map29 -> map30
+    route2222 [label="DM-Diesel\nCharacter: Lauren", fontcolor="red"]
+    route2222 -> map30
     
-    map30 [label="WAR-Serenity"]
-    map30 -> end
+    map30 [label="vCTF-Kargo"]
+    map30 -> map31
+    
+    map31 [label="WAR-Serenity"]
+    map31 -> end
     
     end [label="End of chapter"]
 }
