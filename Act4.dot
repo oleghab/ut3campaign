@@ -1,83 +1,53 @@
 digraph act4 {
-    // node [shape=none]
+    node [shape=none]
 
-    map1 [label="WAR-Islander\nCharacter: Kragoth, Damian, Malakai", fontcolor="red"]
-    map1 -> map2
+    islander [label="WAR-Islander\nCharacter: Kragoth, Damian, Malakai", fontcolor="red"]
+    islander -> marketDistrict
 
-    map2 [label="WAR-MarketDistrict"]
-    map2 -> {route41 route42}
+    marketDistrict [label="WAR-MarketDistrict"]
+    marketDistrict -> {route41 route42}
     
     route41 [label="DM-ShangriLa"]
     route41 -> {route411 route412}
     
     route411 [label="vCTF-Corruption"]
-    route411 -> {route4111 route4112}
+    route411 -> {deckToTorlanSuspence tailSuspense}
     
-    route4111 [label="vCTF-Suspense"]
-    route4111 -> {back4 map3}
-    
-    map3 [label="DM-Biohazard"]
-    map3 -> back4
-    
-    route4112 [label="DM-Deck\nCharacter: Scythe", fontcolor="red"]
-    route4112 -> map4
-    
-    map4 [label="WAR-Torlan"]
-    map4 -> {back4 map5}
-    
-    map5 [label="DM-Biohazard"]
-    map5 -> back4
+    deckToTorlanSuspence [label="DM-Deck\nCharacter: Scythe", fontcolor="red"]
+    deckToTorlanSuspence -> {tailTorlanNecris tailSuspense}
 
+    deckToDefianceTorlan [label="DM-Deck\nCharacter: Scythe", fontcolor="red"]
+    deckToDefianceTorlan -> {tailDefiance tailTorlanNecris}
+    
+    tailTorlanNecris [label="WAR-Torlan_Necris"]
+    tailTorlanNecris -> {onyxcoast biohazard}
+    
+    tailSuspense [label="vCTF-Suspense"]
+    tailSuspense -> {onyxcoast biohazard}
+    
+    tailDefiance [label="DM-Defiance"]
+    tailDefiance -> {onyxcoast biohazard}
+    
     route412 [label="DM-Defiance"]
-    route412 -> {map7 map6}
-    
-    map6 [label="DM-Deck\nCharacter: Scythe", fontcolor="red"]
-    map6 -> map7
-    
-    map7 [label="WAR-Torlan"]
-    map7 -> {back4 map8}
-    
-    map8 [label="DM-Biohazard"]
-    map8 -> back4
+    route412 -> {deckToTorlanSuspence tailTorlanNecris}
     
     route42 [label="vCTF-Corruption"]
     route42 -> {route421 route422}
     
     route421 [label="vCTF-Suspense"]
-    route421 -> {map10 map9}
-
-    map9 [label="DM-Deck\nCharacter: Scythe", fontcolor="red"]
-    map9 -> map10
-    
-    map10 [label="WAR-Torlan"]
-    map10 -> {back4 map11}
-    
-    map11 [label="DM-Biohazard"]
-    map11 -> back4
+    route421 -> {tailTorlanNecris deckToDefianceTorlan}
     
     route422 [label="DM-ShangriLa"]
-    route422 -> {route4221 route4222}
+    route422 -> {tailDefiance deckToDefianceTorlan}
     
-    route4221 [label="DM-Deck\nCharacter: Scythe", fontcolor="red"]
-    route4221 -> map12
+    biohazard [label="DM-Biohazard"]
+    biohazard -> onyxcoast
     
-    map12 [label="WAR-Torlan"]
-    map12 -> {back4 map13}
+    onyxcoast [label="WAR-OnyxCoast"]
+    onyxcoast -> avalanche
     
-    map13 [label="DM-Biohazard"]
-    map13 -> back4
+    avalanche [label="WAR-Avalanche"]
+    avalanche -> deimos
     
-    route4222 [label="DM-Defiance"]
-    route4222 -> {back4 map14}
-    
-    map14 [label="DM-Biohazard"]
-    map14 -> back4
-    
-    back4 [label="WAR-OnyxCoast"]
-    back4 -> map15
-    
-    map15 [label="WAR-Avalanche"]
-    map15 -> map16
-    
-    map16 [label="DM-Deimos"]
+    deimos [label="DM-Deimos"]
 }
