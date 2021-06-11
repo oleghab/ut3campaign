@@ -1,0 +1,195 @@
+digraph act3 {
+    map1 [label="DM-Arsenal\nCard: Heavy armor", fontcolor="red"]
+    map1 -> {route31 route32}
+    
+    route31 [label="DM-HeatRay"]
+    route31 -> {route311 route312}
+    
+    route311 [label="WAR-Dusk"]
+    route311 -> map2
+    
+    map2 [label="WAR-PowerSurge"]
+    map2 -> map3
+    
+    map3 [label="CTF-Coret"]
+    map3 -> {route3111 route3112}
+    
+    route3111 [label="DM-HeatRay"]
+    route3111 -> {routeA routeB}
+    
+    routeA [label="WAR-Islander"]
+    routeA -> map4
+    
+    map4 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    map4 -> {routeA1 routeA2}
+    
+    routeA1 [label="DM-Gateway"]
+    routeA1 -> end
+    
+    routeA2 [label="vCTF-Containment"]
+    routeA2 -> end
+    
+    routeB [label="vCTF-Containment"]
+    routeB -> map5
+    
+    map5 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    map5 -> {routeB1 routeB2}
+    
+    routeB1 [label="WAR-Islander"]
+    routeB1 -> end
+    
+    routeB2 [label="DM-Gateway"]
+    routeB2 -> end
+    
+    route3112 [label="DM-CarbonFire"]
+    route3112 -> map6
+    
+    map6 [label="vCTF-Containment"]
+    map6 -> map7
+    
+    map7 [label="WAR-Islander"]
+    map7 -> map8
+    
+    map8 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    map8 -> map9
+    
+    map9 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map9 -> map10
+    
+    map10 [label="DM-HeatRay"]
+    map10 -> end
+    
+    route312 [label="WAR-Islander"]
+    route312 -> map11
+    
+    map11 [label="WAR-Dusk"]
+    map11 -> {route3121 route3122}
+    
+    route3121 [label="WAR-PowerSurge"]
+    route3121 -> map12
+    
+    map12 [label="CTF-Coret"]
+    map12 -> {map14 map13}
+    
+    map13 [label="vCTF-Containment"]
+    map13 -> map14
+    
+    map14 [label="DM-HeatRay"]
+    map14 -> map15
+    
+    map15 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    map15 -> {route31211 route31212}
+    
+    route31211 [label="DM-CarbonFire"]
+    route31211 -> end
+    
+    route31212 [label="DM-Gateway"]
+    route31212 -> end
+    
+    route3122 [label="CTF-Coret"]
+    route3122 -> {routeC routeD}
+    
+    routeC [label="DM-HeatRay"]
+    routeC -> map16
+    
+    map16 [label="DM-CarbonFire"]
+    map16 -> map17
+    
+    map17 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    map17 -> {map19 map18}
+    
+    map18 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map18 -> map19
+    
+    map19 [label="CTF-Strident"]
+    map19 -> end
+    
+    routeD [label="vCTF-Containment"]
+    routeD -> map20
+    
+    map20 [label="DM-HeatRay"]
+    map20 -> map21
+    
+    map21 [label="DM-CarbonFire"]
+    map21 -> {map23 map22}
+    
+    map22 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map22 -> map23
+    
+    map23 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    map23 -> end
+    
+    route32 [label="WAR-Dusk"]
+    route32 -> map24
+    
+    map24 [label="WAR-PowerSurge"]
+    map24 -> {route321 route322}
+    
+    route321 [label="DM-HeatRay"]
+    route321 -> map25
+    
+    map25 [label="CTF-Coret"]
+    map25 -> map26
+    
+    map26 [label="DM-CarbonFire"]
+    map26 -> {route3211 route3212}
+    
+    route3211 [label="vCTF-Containment"]
+    route3211 -> map27
+    
+    map27 [label="WAR-Islander"]
+    map27 -> back321
+    
+    route3212 [label="WAR-Islander"]
+    route3212 -> map28
+    
+    map28 [label="vCTF-Containment"]
+    map28 -> back321
+    
+    back321 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    back321 -> {map30 map29}
+    
+    map29 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map29 -> map30
+    
+    map30 [label="DM-HeatRay"]
+    map30 -> end
+    
+    route322 [label="WAR-Islander"]
+    route322 -> map31
+    
+    map31 [label="DM-HeatRay"]
+    map31 -> map32
+    
+    map32 [label="CTF-Coret"]
+    map32 -> {route3221 route3222}
+    
+    route3221 [label="vCTF-Containment"]
+    route3221 -> {routeE routeF}
+    
+    routeE [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    routeE -> map33
+    
+    map33 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map33 -> end
+    
+    routeF [label="DM-CarbonFire"]
+    routeF -> map34
+    
+    map34 [label="vCTF-Containment"]
+    map34 -> end
+    
+    route3222 [label="DM-CarbonFire"]
+    route3222 -> map35
+    
+    map35 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    map35 -> {map37 map36}
+    
+    map36 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map36 -> map37
+    
+    map37 [label="vCTF-Containment"]
+    map37 -> end
+    
+    end [label="End of chapter"]
+}
