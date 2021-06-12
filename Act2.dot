@@ -35,7 +35,7 @@ digraph act2 {
     map17 [label="WAR-Downtown"]
     map17 -> {route2121 route2122}
     
-    route2121 [label="DM-Defiance\nCard: Iron Guard Reinforcements (generic)", fontcolor="red"]
+    route2121 [label="DM-Defiance\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
     route2121 -> map19
         
     map19 [label="vCTF-Kargo"]
@@ -65,7 +65,7 @@ digraph act2 {
     map1 [label="DM-Defiance"]
     map1 -> {route2111 route2112}
     
-    route2111 [label="WAR-Serenity\nCard: Iron Guard Reinforcements (generic)", fontcolor="red"]
+    route2111 [label="WAR-Serenity\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
     route2111 -> map9
     
     map9 [label="vCTF-Kargo"]
@@ -104,7 +104,7 @@ digraph act2 {
     map23 [label="DM-Defiance"]
     map23 -> {route2212 route2211}
     
-    route2212 [label="DM-Diesel\nCard: Iron Guard Reinforcements (generic)\nCard: Enhanced Respawners", fontcolor="red"]
+    route2212 [label="DM-Diesel\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
     route2212 -> map50
     
     map50 [label="vCTF-Kargo"]
@@ -116,7 +116,7 @@ digraph act2 {
     map52 [label="WAR-Torlan"]
     map52 -> end
     
-    route2211 [label="WAR-Serenity\nCard: Iron Guard Reinforcements (generic)", fontcolor="red"]
+    route2211 [label="WAR-Serenity\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
     route2211 -> map24
     
     map24 [label="vCTF-Kargo"]
@@ -134,7 +134,7 @@ digraph act2 {
     map27 [label="WAR-Downtown"]
     map27 -> {route2221 route2222}
     
-    route2221 [label="DM-Defiance\nCard: Iron Guard Reinforcements (generic)", fontcolor="red"]
+    route2221 [label="DM-Defiance\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
     route2221 -> map28
     
     map28 [label="vCTF-Kargo"]
@@ -143,7 +143,7 @@ digraph act2 {
     map29 [label="WAR-Serenity_Necris"]
     map29 -> end
     
-    route2222 [label="DM-Diesel\nCard: Iron Guard Reinforcements (generic)\nCard: Enhanced Respawners", fontcolor="red"]
+    route2222 [label="DM-Diesel\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
     route2222 -> map30
     
     map30 [label="vCTF-Kargo"]
