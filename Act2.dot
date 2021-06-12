@@ -33,28 +33,10 @@ digraph act2 {
     map16 -> map17
     
     map17 [label="WAR-Downtown"]
-    map17 -> {route2121 route2122}
+    map17 -> {route2121 dieselKargoSerenityNecrisTorlanEnd}
     
     route2121 [label="DM-Defiance\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
-    route2121 -> map19
-        
-    map19 [label="vCTF-Kargo"]
-    map19 -> map20
-    
-    map20 [label="WAR-Torlan_Leviathan"]
-    map20 -> end
-    
-    route2122 [label="DM-Diesel\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
-    route2122 -> map40
-    
-    map40 [label="vCTF-Kargo"]
-    map40 -> map41
-    
-    map41 [label="WAR-Serenity_Necris"]
-    map41 -> map42
-    
-    map42 [label="WAR-Torlan"]
-    map42 -> end
+    route2121 -> kargoTorlanLeviathan
     
     route211 [label="vCTF-Suspense"]
     route211 -> map7
@@ -63,7 +45,7 @@ digraph act2 {
     map7 -> map1
     
     map1 [label="DM-Defiance"]
-    map1 -> {route2111 route2112}
+    map1 -> {route2111 dieselKargoSerenityNecrisTorlanEnd}
     
     route2111 [label="WAR-Serenity\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
     route2111 -> map9
@@ -72,23 +54,8 @@ digraph act2 {
     map9 -> map10
     
     map10 [label="DM-Diesel"]
-    map10 -> map11
-    
-    map11 [label="WAR-Torlan_Leviathan"]
-    map11 -> end
-    
-    route2112 [label="DM-Diesel\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
-    route2112 -> map12
-    
-    map12 [label="vCTF-Kargo"]
-    map12 -> map13
-    
-    map13 [label="WAR-Serenity_Necris"]
-    map13 -> map14
-    
-    map14 [label="WAR-Torlan"]
-    map14 -> end
-    
+    map10 -> torlanLeviathan
+
     route22 [label="WAR-Torlan"]
     route22 -> map21
     
@@ -102,29 +69,11 @@ digraph act2 {
     map22 -> map23
     
     map23 [label="DM-Defiance"]
-    map23 -> {route2212 route2211}
-    
-    route2212 [label="DM-Diesel\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
-    route2212 -> map50
-    
-    map50 [label="vCTF-Kargo"]
-    map50 -> map51
-    
-    map51 [label="WAR-Serenity_Necris"]
-    map51 -> map52
-    
-    map52 [label="WAR-Torlan"]
-    map52 -> end
+    map23 -> {dieselKargoSerenityNecrisTorlanEnd route2211}
     
     route2211 [label="WAR-Serenity\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
-    route2211 -> map24
-    
-    map24 [label="vCTF-Kargo"]
-    map24 -> map25
-    
-    map25 [label="WAR-Torlan_Leviathan"]
-    map25 -> end
-    
+    route2211 -> kargoTorlanLeviathan
+
     route222 [label="WAR-Serenity"]
     route222 -> map26
     
@@ -135,22 +84,34 @@ digraph act2 {
     map27 -> {route2221 route2222}
     
     route2221 [label="DM-Defiance\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
-    route2221 -> map28
-    
-    map28 [label="vCTF-Kargo"]
-    map28 -> map29
-    
-    map29 [label="WAR-Serenity_Necris"]
-    map29 -> end
+    route2221 -> kargoSerenityNecrisEnd
     
     route2222 [label="DM-Diesel\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
-    route2222 -> map30
+    route2222 -> kargoSerenityNecrisEnd
+        
+    kargoSerenityNecrisEnd [label="vCTF-Kargo"]
+    kargoSerenityNecrisEnd -> serenityNecrisEnd
     
-    map30 [label="vCTF-Kargo"]
-    map30 -> map31
+    serenityNecrisEnd [label="WAR-Serenity_Necris"]
+    serenityNecrisEnd -> end
+
+    kargoTorlanLeviathan [label="vCTF-Kargo"]
+    kargoTorlanLeviathan -> torlanLeviathan
     
-    map31 [label="WAR-Serenity_Necris"]
-    map31 -> end
+    torlanLeviathan [label="WAR-Torlan_Leviathan"]
+    torlanLeviathan -> end
+
+    dieselKargoSerenityNecrisTorlanEnd [label="DM-Diesel\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
+    dieselKargoSerenityNecrisTorlanEnd -> kargoSerenityNecrisTorlanEnd
+
+    kargoSerenityNecrisTorlanEnd [label="vCTF-Kargo"]
+    kargoSerenityNecrisTorlanEnd -> serenityNecrisTorlanEnd
+    
+    serenityNecrisTorlanEnd [label="WAR-Serenity_Necris"]
+    serenityNecrisTorlanEnd -> torlanEnd
+    
+    torlanEnd [label="WAR-Torlan"]
+    torlanEnd -> end
     
     end [label="End of chapter"]
 }
