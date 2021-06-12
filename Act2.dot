@@ -1,60 +1,27 @@
 digraph act2 {
-    map0 [label="DM-RisingSun\nTutorial: Basics", fontcolor="blue"]
-    map0 -> map1
+    risingSun [label="DM-RisingSun\nTutorial: Basics", fontcolor="blue"]
+    risingSun -> shangriLa
 
-    map1 [label="DM-ShangriLa"]
-    map1 -> map2
+    shangriLa [label="DM-ShangriLa"]
+    shangriLa -> reflection
     
-    map2 [label="CTF-Reflection\nTutorial: CTF", fontcolor="blue"]
-    map2 -> map3
+    reflection [label="CTF-Reflection\nTutorial: CTF", fontcolor="blue"]
+    reflection -> sinkhole
     
-    map3 [label="WAR-Sinkhole\nTutorial: Basic warfare", fontcolor="blue"]
-    map3 -> map4
+    sinkhole [label="WAR-Sinkhole\nTutorial: Basic warfare", fontcolor="blue"]
+    sinkhole -> marketDistrict
     
-    map4 [label="WAR-MarketDistrict"]
-    map4 -> map5
+    marketDistrict [label="WAR-MarketDistrict\nTutorial: Advanced warfare", fontcolor="blue"]
+    marketDistrict -> tankCrossing
     
-    map5 [label="WAR-TankCrossing"]
-    map5 -> map6
+    tankCrossing [label="WAR-TankCrossing"]
+    tankCrossing -> map6
     
     map6 [label="vCTF-Kargo\nCard: Tactical Diversion", fontcolor="red"]
     map6 -> {route21 route22}
     
     route21 [label="CTF-Hydrosis"]
-    route21 -> {route211 route212}
-    
-    route211 [label="vCTF-Suspense"]
-    route211 -> map7
-    
-    map7 [label="WAR-Downtown"]
-    map7 -> {route2111 route2112}
-    
-    route2111 [label="DM-Defiance"]
-    route2111 -> map8
-    
-    map8 [label="WAR-Serenity\nCard: Iron Guard Reinforcements", fontcolor="red"]
-    map8 -> map9
-    
-    map9 [label="vCTF-Kargo"]
-    map9 -> map10
-    
-    map10 [label="DM-Diesel"]
-    map10 -> map11
-    
-    map11 [label="WAR-Torlan"]
-    map11 -> end
-    
-    route2112 [label="DM-Diesel\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
-    route2112 -> map12
-    
-    map12 [label="vCTF-Kargo"]
-    map12 -> map13
-    
-    map13 [label="WAR-Serenity"]
-    map13 -> map14
-    
-    map14 [label="WAR-Torlan"]
-    map14 -> end
+    route21 -> {route212 route211}
     
     route212 [label="WAR-Torlan"]
     route212 -> map15
@@ -66,19 +33,61 @@ digraph act2 {
     map16 -> map17
     
     map17 [label="WAR-Downtown"]
-    map17 -> {route2121 route2112}
+    map17 -> {route2121 route2122}
     
-    route2121 [label="DM-Defiance"]
-    route2121 -> map18
-    
-    map18 [label="WAR-Torlan"]
-    map18 -> map19
-    
+    route2121 [label="DM-Defiance\nCard: Iron Guard Reinforcements (generic)", fontcolor="red"]
+    route2121 -> map19
+        
     map19 [label="vCTF-Kargo"]
     map19 -> map20
     
-    map20 [label="DM-Defiance"]
+    map20 [label="WAR-Torlan_Leviathan"]
     map20 -> end
+    
+    route2122 [label="DM-Diesel\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
+    route2122 -> map40
+    
+    map40 [label="vCTF-Kargo"]
+    map40 -> map41
+    
+    map41 [label="WAR-Serenity_Necris"]
+    map41 -> map42
+    
+    map42 [label="WAR-Torlan"]
+    map42 -> end
+    
+    route211 [label="vCTF-Suspense"]
+    route211 -> map7
+    
+    map7 [label="WAR-Downtown"]
+    map7 -> map1
+    
+    map1 [label="DM-Defiance"]
+    map1 -> {route2111 route2112}
+    
+    route2111 [label="WAR-Serenity\nCard: Iron Guard Reinforcements (generic)", fontcolor="red"]
+    route2111 -> map9
+    
+    map9 [label="vCTF-Kargo"]
+    map9 -> map10
+    
+    map10 [label="DM-Diesel"]
+    map10 -> map11
+    
+    map11 [label="WAR-Torlan_Leviathan"]
+    map11 -> end
+    
+    route2112 [label="DM-Diesel\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
+    route2112 -> map12
+    
+    map12 [label="vCTF-Kargo"]
+    map12 -> map13
+    
+    map13 [label="WAR-Serenity_Necris"]
+    map13 -> map14
+    
+    map14 [label="WAR-Torlan"]
+    map14 -> end
     
     route22 [label="WAR-Torlan"]
     route22 -> map21
@@ -93,18 +102,27 @@ digraph act2 {
     map22 -> map23
     
     map23 [label="DM-Defiance"]
-    map23 -> {route2211 map33}
+    map23 -> {route2212 route2211}
     
-    map33 [label="DM-Diesel"]
-    map33 -> map12
+    route2212 [label="DM-Diesel\nCard: Iron Guard Reinforcements (generic)\nCard: Enhanced Respawners", fontcolor="red"]
+    route2212 -> map50
     
-    route2211 [label="WAR-Serenity"]
+    map50 [label="vCTF-Kargo"]
+    map50 -> map51
+    
+    map51 [label="WAR-Serenity_Necris"]
+    map51 -> map52
+    
+    map52 [label="WAR-Torlan"]
+    map52 -> end
+    
+    route2211 [label="WAR-Serenity\nCard: Iron Guard Reinforcements (generic)", fontcolor="red"]
     route2211 -> map24
     
     map24 [label="vCTF-Kargo"]
     map24 -> map25
     
-    map25 [label="WAR-Torlan"]
+    map25 [label="WAR-Torlan_Leviathan"]
     map25 -> end
     
     route222 [label="WAR-Serenity"]
@@ -116,22 +134,22 @@ digraph act2 {
     map27 [label="WAR-Downtown"]
     map27 -> {route2221 route2222}
     
-    route2221 [label="DM-Defiance"]
+    route2221 [label="DM-Defiance\nCard: Iron Guard Reinforcements (generic)", fontcolor="red"]
     route2221 -> map28
     
     map28 [label="vCTF-Kargo"]
     map28 -> map29
     
-    map29 [label="WAR-Serenity\nCard: Iron Guard Reinforcements", fontcolor="red"]
+    map29 [label="WAR-Serenity_Necris"]
     map29 -> end
     
-    route2222 [label="DM-Diesel\nCharacter: Lauren", fontcolor="red"]
+    route2222 [label="DM-Diesel\nCard: Iron Guard Reinforcements (generic)\nCard: Enhanced Respawners", fontcolor="red"]
     route2222 -> map30
     
     map30 [label="vCTF-Kargo"]
     map30 -> map31
     
-    map31 [label="WAR-Serenity"]
+    map31 [label="WAR-Serenity_Necris"]
     map31 -> end
     
     end [label="End of chapter"]
