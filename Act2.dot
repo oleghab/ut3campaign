@@ -17,7 +17,7 @@ digraph act2 {
     tankCrossing [label="WAR-TankCrossing"]
     tankCrossing -> map6
     
-    map6 [label="vCTF-Kargo\nCard: Tactical Diversion", fontcolor="red"]
+    map6 [label="vCTF-Kargo\nCard: Tactical Diversion\nTutorial: vCTF", fontcolor="magenta"]
     map6 -> {route21 route22}
     
     route21 [label="CTF-Hydrosis"]
