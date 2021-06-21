@@ -2,7 +2,7 @@ digraph act3 {
     fork1 [label="DM-Arsenal\nCard: Heavy armor", fontcolor="red"]
     fork1 -> {fork2 map1}
     
-    fork2 [label="DM-HeatRay"]
+    fork2 [label="DM-HeatRay\nEnemy: Liandri, 2:3\nDarkwalker: none"]
     fork2 -> {map2 map3}
     
     map2 [label="WAR-Dusk"]
@@ -14,59 +14,47 @@ digraph act3 {
     fork3 [label="CTF-Coret"]
     fork3 -> {fork4 map6}
     
-    fork4 [label="DM-HeatRay, Blue only darkwalker"]
+    fork4 [label="DM-HeatRay\nEnemy: Krall, 2:3\nDarkwalker: locked"]
     fork4 -> {map0 map8}
     
-    map0 [label="WAR-Islander"]
+    map0 [label="WAR-Islander\nEnemy: Liandri"]
     map0 -> fork5
     
-    fork5 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork5 [label="CTF-Strident\nEnemy: Liandri\nCard: Liandri Reinforcements", fontcolor="red"]
     fork5 -> {map10 map11}
     
     map10 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
     map10 -> end
     
-    map11 [label="vCTF-Containment"]
+    map11 [label="vCTF-Containment\nEnemy: Liandri\nDarkwalker: contained"]
     map11 -> end
     
-    map8 [label="vCTF-Containment"]
+    map8 [label="vCTF-Containment\nEnemy: Krall\nDarkwalker: released"]
     map8 -> fork6
     
-    fork6 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork6 -> {map12 map13}
+    fork6 [label="CTF-Strident\nEnemy: Liandri\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork6 -> {map12 map10}
     
     map12 [label="WAR-Islander"]
     map12 -> end
-    
-    map13 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map13 -> end
-    
-    map6 [label="DM-CarbonFire"]
+        
+    map6 [label="DM-CarbonFire\nEnemy: Liandri"]
     map6 -> map14
     
-    map14 [label="vCTF-Containment"]
+    map14 [label="vCTF-Containment\nEnemy: Liandri\nDarkwalker: contained"]
     map14 -> fork7
     
     fork7 [label="WAR-Islander"]
-    fork7 -> {fork8 map16}
+    fork7 -> {fork8 map18}
     
     fork8 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork8 -> {map17 map18}
-    
-    map17 [label="DM-HeatRay"]
-    map17 -> end
-    
-    map18 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    fork8 -> {map19 map18}
+        
+    map18 [label="DM-Gateway\nEnemy: Liandri\nCharacter: Matrix", fontcolor="red"]
     map18 -> map19
     
-    map19 [label="DM-HeatRay"]
+    map19 [label="DM-HeatRay\nEnemy: Krall\nDarkwalker: free"]
     map19 -> end
-    
-    map16 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map16 -> map20
-    
-    map20 [label="DM-HeatRay"]
-    map20 -> end
     
     map3 [label="WAR-Islander"]
     map3 -> fork9
@@ -80,79 +68,55 @@ digraph act3 {
     fork10 [label="CTF-Coret"]
     fork10 -> {map25 map26}
     
-    map25 [label="vCTF-Containment"]
+    map25 [label="vCTF-Containment\nDarkwalker: contained"]
     map25 -> map27
     
-    map27 [label="DM-HeatRay"]    
-    map27 -> fork11
-    
-    fork11 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork11 -> {map29 map30}
-    
-    map29 [label="DM-CarbonFire"]
-    map29 -> end
-    
-    map30 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map30 -> end
-    
-    map26 [label="DM-HeatRay, Blue darkwalker"]
+    map27 [label="DM-HeatRay\nDarkwalker: free"]    
+    map27 -> fork12
+
+    map26 [label="DM-HeatRay\nDarkwalker: locked"]
     map26 -> fork12
     
     fork12 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork12 -> {map32 map33}
+    fork12 -> {map32 map10}
     
     map32 [label="DM-CarbonFire"]
     map32 -> end
-    
-    map33 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map33 -> end
-    
+        
     fork13 [label="CTF-Coret"]
     fork13 -> {map34 map35}
     
-    map34 [label="DM-HeatRay, Blue darkwalker"]
+    map34 [label="DM-HeatRay\nDarkwalker: locked"]
     map34 -> fork14
     
     fork14 [label="DM-CarbonFire"]
-    fork14 -> {fork15 map38}
+    fork14 -> {fork15 map40}
     
     fork15 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork15 -> {map39 map40}
-    
-    map39 [label="vCTF-Containment"]
-    map39 -> end
-    
+    fork15 -> {map41 map40}
+        
     map40 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
     map40 -> map41
     
-    map41 [label="vCTF-Containment"]
+    map41 [label="vCTF-Containment\nDarkwalker: contained"]
     map41 -> end
 
-    map38 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map38 -> map42
-    
-    map42 [label="vCTF-Containment"]
-    map42 -> end
-
-    map35 [label="vCTF-Containment"]
+    map35 [label="vCTF-Containment\nDarkwalker: contained"]
     map35 -> map43
 
-    map43 [label="DM-HeatRay\nDarkwalker: both"]
+    map43 [label="DM-HeatRay\nDarkwalker: free"]
     map43 -> fork16
     
     fork16 [label="DM-CarbonFire"]
-    fork16 -> {map44 map45}
-    
-    map44 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    map44 -> end
-    
+    fork16 -> {map46 map45}
+        
     map45 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
     map45 -> map46
     
     map46 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
     map46 -> end
     
-    map1 [label="WAR-Dusk"]
+    map1 [label="WAR-Dusk\nEnemy: Liandri, 2:3"]
     map1 -> fork17
     
     fork17 [label="WAR-PowerSurge"]
@@ -167,88 +131,46 @@ digraph act3 {
     fork18 [label="DM-CarbonFire"]
     fork18 -> {map50 map51}
     
-    map50 [label="vCTF-Containment"]
+    map50 [label="vCTF-Containment\nEnemy: Liandri\nDarkwalker: contained"]
     map50 -> map52
     
     map52 [label="WAR-Islander"]
-    map52 -> fork19
+    map52 -> fork8  
     
-    fork19 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork19 -> {map53 map54}
-    
-    map53 [label="DM-HeatRay\nDarkwalker: both"]
-    map53 -> end
-    
-    map54 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map54 -> map55
-    
-    map55 [label="DM-HeatRay\nDarkwalker: both"]
-    map55 -> end    
-    
-    map51 [label="WAR-Islander"]
+    map51 [label="WAR-Islander\nEnemy: Liandri"]
     map51 -> map56
     
-    map56 [label="vCTF-ContainmentSP"]
-    map56 -> fork20
-    
-    fork20 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork20 -> {map57 map58}
-    
-    map57 [label="DM-HeatRay\nDarkwalker: both"]
-    map57 -> end
-    
-    map58 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map58 -> map59
-
-    map59 [label="DM-HeatRay\nDarkwalker: both"]
-    map59 -> end
+    map56 [label="vCTF-Containment\nEnemy: Krall\nDarkwalker: released"]
+    map56 -> fork8
     
     map48 [label="WAR-Islander"]
     map48 -> map60
     
-    map60 [label="DM-HeatRay\nDarkwalker: blue"]
+    map60 [label="DM-HeatRay\nDarkwalker: locked"]
     map60 -> fork21
     
     fork21 [label="CTF-Coret"]
     fork21 -> {map61 map62}
     
-    map61 [label="vCTF-Containment\nDarkwalker: static"]
+    map61 [label="vCTF-Containment\nDarkwalker: contained"]
     map61 -> fork22
     
     fork22 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork22 -> {fork23 map65}
+    fork22 -> {fork23 map73}
     
     fork23 [label="DM-CarbonFire"]
-    fork23 -> {map67 map68}
-    
-    map67 [label="vCTF-Containment\nDarkwalker: moving"]
-    map67 -> end
-    
-    map68 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map68 -> map69
-
-    map69 [label="vCTF-Containment\nDarkwalker: moving"]
-    map69 -> end
-
-    map65 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map65 -> map70
-    
-    map70 [label="vCTF-Containment\nDarkwalker: moving"]
-    map70 -> end
+    fork23 -> {map74 map73}
     
     map62 [label="DM-CarbonFire"]
     map62 -> map71
     
     map71 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    map71 -> {map72 map73}
-    
-    map72 [label="vCTF-Containment\nDarkwalker: moving"]
-    map72 -> end
-    
+    map71 -> {map74 map73}
+        
     map73 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
     map73 -> map74
 
-    map74 [label="vCTF-Containment\nDarkwalker: moving"]
+    map74 [label="vCTF-Containment\nDarkwalker: released"]
     map74 -> end
     
     end [label="End of chapter"]
