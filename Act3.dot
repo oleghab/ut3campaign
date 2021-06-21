@@ -1,195 +1,255 @@
 digraph act3 {
-    map1 [label="DM-Arsenal\nCard: Heavy armor", fontcolor="red"]
-    map1 -> {route31 route32}
+    fork1 [label="DM-Arsenal\nCard: Heavy armor", fontcolor="red"]
+    fork1 -> {fork2 map1}
     
-    route31 [label="DM-HeatRay"]
-    route31 -> {route311 route312}
+    fork2 [label="DM-HeatRay"]
+    fork2 -> {map2 map3}
     
-    route311 [label="WAR-Dusk"]
-    route311 -> map2
+    map2 [label="WAR-Dusk"]
+    map2 -> map4
     
-    map2 [label="WAR-PowerSurge"]
-    map2 -> map3
+    map4 [label="WAR-PowerSurge"]
+    map4 -> fork3
     
-    map3 [label="CTF-Coret"]
-    map3 -> {route3111 route3112}
+    fork3 [label="CTF-Coret"]
+    fork3 -> {fork4 map6}
     
-    route3111 [label="DM-HeatRay"]
-    route3111 -> {routeA routeB}
+    fork4 [label="DM-HeatRay, Blue only darkwalker"]
+    fork4 -> {map0 map8}
     
-    routeA [label="WAR-Islander"]
-    routeA -> map4
+    map0 [label="WAR-Islander"]
+    map0 -> fork5
     
-    map4 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    map4 -> {routeA1 routeA2}
+    fork5 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork5 -> {map10 map11}
     
-    routeA1 [label="DM-Gateway"]
-    routeA1 -> end
-    
-    routeA2 [label="vCTF-Containment"]
-    routeA2 -> end
-    
-    routeB [label="vCTF-Containment"]
-    routeB -> map5
-    
-    map5 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    map5 -> {routeB1 routeB2}
-    
-    routeB1 [label="WAR-Islander"]
-    routeB1 -> end
-    
-    routeB2 [label="DM-Gateway"]
-    routeB2 -> end
-    
-    route3112 [label="DM-CarbonFire"]
-    route3112 -> map6
-    
-    map6 [label="vCTF-Containment"]
-    map6 -> map7
-    
-    map7 [label="WAR-Islander"]
-    map7 -> map8
-    
-    map8 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    map8 -> map9
-    
-    map9 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map9 -> map10
-    
-    map10 [label="DM-HeatRay"]
+    map10 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
     map10 -> end
     
-    route312 [label="WAR-Islander"]
-    route312 -> map11
+    map11 [label="vCTF-Containment"]
+    map11 -> end
     
-    map11 [label="WAR-Dusk"]
-    map11 -> {route3121 route3122}
+    map8 [label="vCTF-Containment"]
+    map8 -> fork6
     
-    route3121 [label="WAR-PowerSurge"]
-    route3121 -> map12
+    fork6 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork6 -> {map12 map13}
     
-    map12 [label="CTF-Coret"]
-    map12 -> {map14 map13}
+    map12 [label="WAR-Islander"]
+    map12 -> end
     
-    map13 [label="vCTF-Containment"]
-    map13 -> map14
+    map13 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map13 -> end
     
-    map14 [label="DM-HeatRay"]
-    map14 -> map15
+    map6 [label="DM-CarbonFire"]
+    map6 -> map14
     
-    map15 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    map15 -> {route31211 route31212}
+    map14 [label="vCTF-Containment"]
+    map14 -> fork7
     
-    route31211 [label="DM-CarbonFire"]
-    route31211 -> end
+    fork7 [label="WAR-Islander"]
+    fork7 -> {fork8 map16}
     
-    route31212 [label="DM-Gateway"]
-    route31212 -> end
+    fork8 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork8 -> {map17 map18}
     
-    route3122 [label="CTF-Coret"]
-    route3122 -> {routeC routeD}
-    
-    routeC [label="DM-HeatRay"]
-    routeC -> map16
-    
-    map16 [label="DM-CarbonFire"]
-    map16 -> map17
-    
-    map17 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    map17 -> {map19 map18}
+    map17 [label="DM-HeatRay"]
+    map17 -> end
     
     map18 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
     map18 -> map19
     
-    map19 [label="CTF-Strident"]
+    map19 [label="DM-HeatRay"]
     map19 -> end
     
-    routeD [label="vCTF-Containment"]
-    routeD -> map20
+    map16 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map16 -> map20
     
     map20 [label="DM-HeatRay"]
-    map20 -> map21
+    map20 -> end
     
-    map21 [label="DM-CarbonFire"]
-    map21 -> {map23 map22}
+    map3 [label="WAR-Islander"]
+    map3 -> fork9
     
-    map22 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map22 -> map23
+    fork9 [label="WAR-Dusk"]
+    fork9 -> {map22 fork13}
     
-    map23 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    map23 -> end
+    map22 [label="WAR-PowerSurge"]
+    map22 -> fork10
     
-    route32 [label="WAR-Dusk"]
-    route32 -> map24
+    fork10 [label="CTF-Coret"]
+    fork10 -> {map25 map26}
     
-    map24 [label="WAR-PowerSurge"]
-    map24 -> {route321 route322}
+    map25 [label="vCTF-Containment"]
+    map25 -> map27
     
-    route321 [label="DM-HeatRay"]
-    route321 -> map25
+    map27 [label="DM-HeatRay"]    
+    map27 -> fork11
     
-    map25 [label="CTF-Coret"]
-    map25 -> map26
+    fork11 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork11 -> {map29 map30}
     
-    map26 [label="DM-CarbonFire"]
-    map26 -> {route3211 route3212}
+    map29 [label="DM-CarbonFire"]
+    map29 -> end
     
-    route3211 [label="vCTF-Containment"]
-    route3211 -> map27
-    
-    map27 [label="WAR-Islander"]
-    map27 -> back321
-    
-    route3212 [label="WAR-Islander"]
-    route3212 -> map28
-    
-    map28 [label="vCTF-Containment"]
-    map28 -> back321
-    
-    back321 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    back321 -> {map30 map29}
-    
-    map29 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map29 -> map30
-    
-    map30 [label="DM-HeatRay"]
+    map30 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
     map30 -> end
     
-    route322 [label="WAR-Islander"]
-    route322 -> map31
+    map26 [label="DM-HeatRay, Blue darkwalker"]
+    map26 -> fork12
     
-    map31 [label="DM-HeatRay"]
-    map31 -> map32
+    fork12 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork12 -> {map32 map33}
     
-    map32 [label="CTF-Coret"]
-    map32 -> {route3221 route3222}
-    
-    route3221 [label="vCTF-Containment"]
-    route3221 -> {routeE routeF}
-    
-    routeE [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    routeE -> map33
+    map32 [label="DM-CarbonFire"]
+    map32 -> end
     
     map33 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
     map33 -> end
     
-    routeF [label="DM-CarbonFire"]
-    routeF -> map34
+    fork13 [label="CTF-Coret"]
+    fork13 -> {map34 map35}
     
-    map34 [label="vCTF-Containment"]
-    map34 -> end
+    map34 [label="DM-HeatRay, Blue darkwalker"]
+    map34 -> fork14
     
-    route3222 [label="DM-CarbonFire"]
-    route3222 -> map35
+    fork14 [label="DM-CarbonFire"]
+    fork14 -> {fork15 map38}
     
-    map35 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    map35 -> {map37 map36}
+    fork15 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork15 -> {map39 map40}
     
-    map36 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map36 -> map37
+    map39 [label="vCTF-Containment"]
+    map39 -> end
     
-    map37 [label="vCTF-Containment"]
-    map37 -> end
+    map40 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map40 -> map41
+    
+    map41 [label="vCTF-Containment"]
+    map41 -> end
+
+    map38 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map38 -> map42
+    
+    map42 [label="vCTF-Containment"]
+    map42 -> end
+
+    map35 [label="vCTF-Containment"]
+    map35 -> map43
+
+    map43 [label="DM-HeatRay\nDarkwalker: both"]
+    map43 -> fork16
+    
+    fork16 [label="DM-CarbonFire"]
+    fork16 -> {map44 map45}
+    
+    map44 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    map44 -> end
+    
+    map45 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map45 -> map46
+    
+    map46 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    map46 -> end
+    
+    map1 [label="WAR-Dusk"]
+    map1 -> fork17
+    
+    fork17 [label="WAR-PowerSurge"]
+    fork17 -> {map47 map48}
+     
+    map47 [label="DM-HeatRay\nDarkwalker: none"]
+    map47 -> map49
+    
+    map49 [label="CTF-Coret"]
+    map49 -> fork18
+    
+    fork18 [label="DM-CarbonFire"]
+    fork18 -> {map50 map51}
+    
+    map50 [label="vCTF-Containment"]
+    map50 -> map52
+    
+    map52 [label="WAR-Islander"]
+    map52 -> fork19
+    
+    fork19 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork19 -> {map53 map54}
+    
+    map53 [label="DM-HeatRay\nDarkwalker: both"]
+    map53 -> end
+    
+    map54 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map54 -> map55
+    
+    map55 [label="DM-HeatRay\nDarkwalker: both"]
+    map55 -> end    
+    
+    map51 [label="WAR-Islander"]
+    map51 -> map56
+    
+    map56 [label="vCTF-ContainmentSP"]
+    map56 -> fork20
+    
+    fork20 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork20 -> {map57 map58}
+    
+    map57 [label="DM-HeatRay\nDarkwalker: both"]
+    map57 -> end
+    
+    map58 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map58 -> map59
+
+    map59 [label="DM-HeatRay\nDarkwalker: both"]
+    map59 -> end
+    
+    map48 [label="WAR-Islander"]
+    map48 -> map60
+    
+    map60 [label="DM-HeatRay\nDarkwalker: blue"]
+    map60 -> fork21
+    
+    fork21 [label="CTF-Coret"]
+    fork21 -> {map61 map62}
+    
+    map61 [label="vCTF-Containment\nDarkwalker: static"]
+    map61 -> fork22
+    
+    fork22 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork22 -> {fork23 map65}
+    
+    fork23 [label="DM-CarbonFire"]
+    fork23 -> {map67 map68}
+    
+    map67 [label="vCTF-Containment\nDarkwalker: moving"]
+    map67 -> end
+    
+    map68 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map68 -> map69
+
+    map69 [label="vCTF-Containment\nDarkwalker: moving"]
+    map69 -> end
+
+    map65 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map65 -> map70
+    
+    map70 [label="vCTF-Containment\nDarkwalker: moving"]
+    map70 -> end
+    
+    map62 [label="DM-CarbonFire"]
+    map62 -> map71
+    
+    map71 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    map71 -> {map72 map73}
+    
+    map72 [label="vCTF-Containment\nDarkwalker: moving"]
+    map72 -> end
+    
+    map73 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map73 -> map74
+
+    map74 [label="vCTF-Containment\nDarkwalker: moving"]
+    map74 -> end
     
     end [label="End of chapter"]
 }
