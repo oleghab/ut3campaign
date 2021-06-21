@@ -1,20 +1,22 @@
 digraph act3 {
-    fork1 [label="DM-Arsenal\nCard: Heavy armor", fontcolor="red"]
-    fork1 -> {fork2 map1}
+    node[shape=none]
     
-    fork2 [label="DM-HeatRay\nEnemy: Liandri, 2:3\nDarkwalker: none"]
-    fork2 -> {map2 map3}
+    map1 [label="DM-Arsenal\nEnemy: Liandri\nCard: Heavy armor", fontcolor="red"]
+    map1 -> {map2 map101}
     
-    map2 [label="WAR-Dusk"]
-    map2 -> map4
+    map2 [label="DM-HeatRay\nEnemy: Liandri, 3:2\nDarkwalker: none"]
+    map2 -> {map102 map3}
     
-    map4 [label="WAR-PowerSurge"]
+    map102 [label="WAR-Dusk\nEnemy: Liandri, 3:2"]
+    map102 -> map4
+    
+    map4 [label="WAR-PowerSurge\nEnemy: Liandri, 3:2"]
     map4 -> fork3
     
-    fork3 [label="CTF-Coret"]
+    fork3 [label="CTF-Coret\nEnemy: Liandri"]
     fork3 -> {fork4 map6}
     
-    fork4 [label="DM-HeatRay\nEnemy: Krall, 2:3\nDarkwalker: locked"]
+    fork4 [label="DM-HeatRay\nEnemy: Krall, 3:2\nDarkwalker: locked"]
     fork4 -> {map0 map8}
     
     map0 [label="WAR-Islander\nEnemy: Liandri"]
@@ -22,10 +24,7 @@ digraph act3 {
     
     fork5 [label="CTF-Strident\nEnemy: Liandri\nCard: Liandri Reinforcements", fontcolor="red"]
     fork5 -> {map10 map11}
-    
-    map10 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map10 -> end
-    
+        
     map11 [label="vCTF-Containment\nEnemy: Liandri\nDarkwalker: contained"]
     map11 -> end
     
@@ -56,34 +55,37 @@ digraph act3 {
     map19 [label="DM-HeatRay\nEnemy: Krall\nDarkwalker: free"]
     map19 -> end
     
-    map3 [label="WAR-Islander"]
+    map3 [label="WAR-Islander\nEnemy: Liandri"]
     map3 -> fork9
     
-    fork9 [label="WAR-Dusk"]
+    fork9 [label="WAR-Dusk\nEnemy: Liandri, 3:2"]
     fork9 -> {map22 fork13}
     
-    map22 [label="WAR-PowerSurge"]
+    map22 [label="WAR-PowerSurge\nEnemy: Krall, 2:1"]
     map22 -> fork10
     
-    fork10 [label="CTF-Coret"]
+    fork10 [label="CTF-Coret\nEnemy: Liandri"]
     fork10 -> {map25 map26}
     
-    map25 [label="vCTF-Containment\nDarkwalker: contained"]
+    map25 [label="vCTF-Containment\nEnemy: Liandri\nDarkwalker: contained"]
     map25 -> map27
     
-    map27 [label="DM-HeatRay\nDarkwalker: free"]    
+    map27 [label="DM-HeatRay\nEnemy: Krall, 3:2\nDarkwalker: free"]    
     map27 -> fork12
 
-    map26 [label="DM-HeatRay\nDarkwalker: locked"]
+    map26 [label="DM-HeatRay\nEnemy: Krall, 3:2\nDarkwalker: locked"]
     map26 -> fork12
     
-    fork12 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    fork12 [label="CTF-Strident\nEnemy: Krall\nCard: Liandri Reinforcements", fontcolor="red"]
     fork12 -> {map32 map10}
     
-    map32 [label="DM-CarbonFire"]
+    map32 [label="DM-CarbonFire\nEnemy: Liandri"]
     map32 -> end
+    
+    map10 [label="DM-Gateway\nEnemy: Liandri, 2:1\nCharacter: Matrix", fontcolor="red"]
+    map10 -> end
         
-    fork13 [label="CTF-Coret"]
+    fork13 [label="CTF-Coret\nEnemy: Liandri"]
     fork13 -> {map34 map35}
     
     map34 [label="DM-HeatRay\nDarkwalker: locked"]
@@ -116,13 +118,13 @@ digraph act3 {
     map46 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
     map46 -> end
     
-    map1 [label="WAR-Dusk\nEnemy: Liandri, 2:3"]
-    map1 -> fork17
+    map101 [label="WAR-Dusk\nEnemy: Liandri, 3:2"]
+    map101 -> fork17
     
-    fork17 [label="WAR-PowerSurge"]
+    fork17 [label="WAR-PowerSurge\nEnemy: Liandri"]
     fork17 -> {map47 map48}
      
-    map47 [label="DM-HeatRay\nDarkwalker: none"]
+    map47 [label="DM-HeatRay\nEnemy: Liandri\nDarkwalker: none"]
     map47 -> map49
     
     map49 [label="CTF-Coret"]
@@ -143,7 +145,7 @@ digraph act3 {
     map56 [label="vCTF-Containment\nEnemy: Krall\nDarkwalker: released"]
     map56 -> fork8
     
-    map48 [label="WAR-Islander"]
+    map48 [label="WAR-Islander\nEnemy: Liandri"]
     map48 -> map60
     
     map60 [label="DM-HeatRay\nDarkwalker: locked"]
