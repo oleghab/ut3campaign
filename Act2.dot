@@ -39,11 +39,8 @@ digraph act2 {
     map14 -> map16
     
     map16 [label="16. vCTF-Kargo\nVs: Krall, 6:4"]
-    map16 -> map17
-    
-    map17 [label="17. WAR-Torlan_Leviathan\nVs: Krall, 7:4"]
-    map17 -> end
-    
+    map16 -> map42
+        
     map15 [label="15. DM-Diesel\nVs: Axon, 4:2+\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
     map15 -> map18
     
@@ -63,7 +60,7 @@ digraph act2 {
     map21 -> map22
     
     map22 [label="22. DM-Defiance\nVs: Axon, 4:4"]
-    map22 -> {map23 map24}
+    map22 -> {map23 map36}
     
     map23 [label="23. WAR-Serenity\nVs: Axon, 4:4\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
     map23 -> map25
@@ -72,23 +69,8 @@ digraph act2 {
     map25 -> map26
     
     map26 [label="26. DM-Diesel\nVs: Krall, 4:4"]
-    map26 -> map27
-    
-    map27 [label="27. WAR-Torlan_Leviathan\nVs: Krall, 7:4"]
-    map27 -> end
-    
-    map24 [label="24. DM-Diesel\nVs: Axon, 4:2+\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
-    map24 -> map28
-    
-    map28 [label="28. vCTF-Kargo\nVs: Krall, 5:4"]
-    map28 -> map29
-    
-    map29 [label="29. WAR-Serenity_Necris\nVs: Krall, 6:4"]
-    map29 -> map30
-    
-    map30 [label="30. WAR-Torlan\nVs: Krall, 6:4"]
-    map30 -> end
-    
+    map26 -> map42
+            
     map8 [label="8. WAR-Torlan\nVs: Axon, 4:4\nNo tank node"]
     map8 -> map31
     
@@ -113,7 +95,7 @@ digraph act2 {
     map39 [label="39. WAR-Serenity_Necris\nVs: Krall, 6:4"]
     map39 -> map40
     
-    map40 [label="40. WAR-Torlan\nVs: Krall, 6:4"]
+    map40 [label="40. WAR-Torlan\nVs: Krall, 6:4\nEnemy nodes"]
     map40 -> end
     
     map37 [label="37. WAR-Serenity\nVs: Axon, 4:4\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
@@ -138,11 +120,8 @@ digraph act2 {
     map45 -> map47
     
     map47 [label="47. vCTF-Kargo\nVs: Krall, 6:4"]
-    map47 -> map48
-    
-    map48 [label="48. WAR-Serenity_Necris\nVs: Krall 6:6"]
-    map48 -> end
-    
+    map47 -> map50
+
     map46 [label="46. DM-Diesel\nVs: Axon, 4:2+\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
     map46 -> map49
     
