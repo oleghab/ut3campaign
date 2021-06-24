@@ -1,117 +1,156 @@
 digraph act2 {
-    risingSun [label="DM-RisingSun\nTutorial: Basics", fontcolor="blue"]
-    risingSun -> shangriLa
+    map0 [label="0. DM-RisingSun\nVs: Jester(Ronin), FFA 2-4\nTutorial: Basics", fontcolor="blue"]
+    map0 -> map1
+    
+    map1 [label="1. DM-ShangriLa\nVs: Axon, 4:4 - 4:6"]
+    map1 -> map2
+    
+    map2 [label="2. CTF-Reflection\nVs: Axon, 4:4\nTutorial: CTF", fontcolor="blue"]
+    map2 -> map3
+    
+    map3 [label="3. WAR-Sinkhole\nVs: Axon, 3:4\nTutorial: Basic warfare", fontcolor="blue"]
+    map3 -> map4
+    
+    map4 [label="4. WAR-MarketDistrict\nVs: Axon, 4:4\nTutorial: Advanced warfare", fontcolor="blue"]
+    map4 -> map5
+    
+    map5 [label="5. WAR-TankCrossing\nVs: Axon, 4:4"]
+    map5 -> map6
+    
+    map6 [label="6. vCTF-Kargo\nVs: Axon, 4:4\nCard: Tactical Diversion\nTutorial: vCTF", fontcolor="magenta"]
+    map6 -> {map7 map8}
 
-    shangriLa [label="DM-ShangriLa"]
-    shangriLa -> reflection
+    map7 [label="7. CTF-Hydrosis\nVs: Axon, 6:6"]
+    map7 -> {map9 map10}
     
-    reflection [label="CTF-Reflection\nTutorial: CTF", fontcolor="blue"]
-    reflection -> sinkhole
+    map9 [label="9. WAR-Torlan\nVs: Axon, 6:6"]
+    map9 -> map11
     
-    sinkhole [label="WAR-Sinkhole\nTutorial: Basic warfare", fontcolor="blue"]
-    sinkhole -> marketDistrict
+    map11 [label="11. vCTF-Suspense\nVs: Axon, 6:6"]
+    map11 -> map12
     
-    marketDistrict [label="WAR-MarketDistrict\nTutorial: Advanced warfare", fontcolor="blue"]
-    marketDistrict -> tankCrossing
+    map12 [label="12. WAR-Serenity\nVs: Axon, 4:5"]
+    map12 -> map13
     
-    tankCrossing [label="WAR-TankCrossing"]
-    tankCrossing -> map6
+    map13 [label="13. WAR-Downtown\nVs: Axon, 4:4\nEnemy nodes"]
+    map13 -> {map14 map15}
     
-    map6 [label="vCTF-Kargo\nCard: Tactical Diversion\nTutorial: vCTF", fontcolor="magenta"]
-    map6 -> {route21 route22}
+    map14 [label="14. DM-Defiance\nVs: Axon, 4:4\nCard: Iron Guard Reinforcements(Barktooth)", fontcolor="red"]
+    map14 -> map16
     
-    route21 [label="CTF-Hydrosis"]
-    route21 -> {route212 route211}
-    
-    route212 [label="WAR-Torlan"]
-    route212 -> map15
-    
-    map15 [label="vCTF-Suspense"]
-    map15 -> map16
-    
-    map16 [label="WAR-Serenity"]
+    map16 [label="16. vCTF-Kargo\nVs: Krall, 6:4"]
     map16 -> map17
     
-    map17 [label="WAR-Downtown"]
-    map17 -> {route2121 dieselKargoSerenityNecrisTorlanEnd}
+    map17 [label="17. WAR-Torlan_Leviathan\nVs: Krall, 7:4"]
+    map17 -> end
     
-    route2121 [label="DM-Defiance\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
-    route2121 -> kargoTorlanLeviathan
+    map15 [label="15. DM-Diesel\nVs: Axon, 4:2+\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
+    map15 -> map18
     
-    route211 [label="vCTF-Suspense"]
-    route211 -> map7
+    map18 [label="18. vCTF-Kargo\nVs: Krall, 5:4"]
+    map18 -> map19
     
-    map7 [label="WAR-Downtown"]
-    map7 -> map1
+    map19 [label="19. WAR-Serenity_Necris\nVs: Krall, 8:4"]
+    map19 -> map20
     
-    map1 [label="DM-Defiance"]
-    map1 -> {route2111 dieselKargoSerenityNecrisTorlanEnd}
+    map20 [label="20. WAR-Torlan\nVs: Liandri, 6:4"]
+    map20 -> end
     
-    route2111 [label="WAR-Serenity\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
-    route2111 -> map9
+    map10 [label="10. vCTF-Suspense\nVs: Axon, 4:4"]
+    map10 -> map21
     
-    map9 [label="vCTF-Kargo"]
-    map9 -> map10
+    map21 [label="21. WAR-Downtown\nVs: Axon, 4:4\nEnemy nodes"]
+    map21 -> map22
     
-    map10 [label="DM-Diesel"]
-    map10 -> torlanLeviathan
-
-    route22 [label="WAR-Torlan"]
-    route22 -> map21
+    map22 [label="22. DM-Defiance\nVs: Axon, 4:4"]
+    map22 -> {map23 map24}
     
-    map21 [label="CTF-Hydrosis"]
-    map21 -> {route221 route222}
+    map23 [label="23. WAR-Serenity\nVs: Axon, 4:4\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
+    map23 -> map25
     
-    route221 [label="vCTF-Suspense"]
-    route221 -> map22
+    map25 [label="25. vCTF-Kargo\nVs: Krall, 6:4"]
+    map25 -> map26
     
-    map22 [label="WAR-Downtown"]
-    map22 -> map23
-    
-    map23 [label="DM-Defiance"]
-    map23 -> {dieselKargoSerenityNecrisTorlanEnd route2211}
-    
-    route2211 [label="WAR-Serenity\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
-    route2211 -> kargoTorlanLeviathan
-
-    route222 [label="WAR-Serenity"]
-    route222 -> map26
-    
-    map26 [label="vCTF-Suspense"]
+    map26 [label="26. DM-Diesel\nVs: Krall, 4:4"]
     map26 -> map27
     
-    map27 [label="WAR-Downtown"]
-    map27 -> {route2221 route2222}
+    map27 [label="27. WAR-Torlan_Leviathan\nVs: Krall, 7:4"]
+    map27 -> end
     
-    route2221 [label="DM-Defiance\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
-    route2221 -> kargoSerenityNecrisEnd
+    map24 [label="24. DM-Diesel\nVs: Axon, 4:2+\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
+    map24 -> map28
     
-    route2222 [label="DM-Diesel\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
-    route2222 -> kargoSerenityNecrisEnd
-        
-    kargoSerenityNecrisEnd [label="vCTF-Kargo"]
-    kargoSerenityNecrisEnd -> serenityNecrisEnd
+    map28 [label="28. vCTF-Kargo\nVs: Krall, 5:4"]
+    map28 -> map29
     
-    serenityNecrisEnd [label="WAR-Serenity_Necris"]
-    serenityNecrisEnd -> end
-
-    kargoTorlanLeviathan [label="vCTF-Kargo"]
-    kargoTorlanLeviathan -> torlanLeviathan
+    map29 [label="29. WAR-Serenity_Necris\nVs: Krall, 6:4"]
+    map29 -> map30
     
-    torlanLeviathan [label="WAR-Torlan_Leviathan"]
-    torlanLeviathan -> end
-
-    dieselKargoSerenityNecrisTorlanEnd [label="DM-Diesel\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners\nCharacter: Lauren", fontcolor="red"]
-    dieselKargoSerenityNecrisTorlanEnd -> kargoSerenityNecrisTorlanEnd
-
-    kargoSerenityNecrisTorlanEnd [label="vCTF-Kargo"]
-    kargoSerenityNecrisTorlanEnd -> serenityNecrisTorlanEnd
+    map30 [label="30. WAR-Torlan\nVs: Krall, 6:4"]
+    map30 -> end
     
-    serenityNecrisTorlanEnd [label="WAR-Serenity_Necris"]
-    serenityNecrisTorlanEnd -> torlanEnd
+    map8 [label="8. WAR-Torlan\nVs: Axon, 4:4\nNo tank node"]
+    map8 -> map31
     
-    torlanEnd [label="WAR-Torlan"]
-    torlanEnd -> end
+    map31 [label="31. CTF-Hydrosis\nVs: Axon, 5:5"]
+    map31 -> {map32 map33}
     
+    map32 [label="32. vCTF-Suspense\nVs: Axon, 4:4"]
+    map32 -> map34
+    
+    map34 [label="34. WAR-Downtown\nVs: Axon 4:4\nEnemy nodes"]
+    map34 -> map35
+    
+    map35 [label="35. DM-Defiance\nVs: Axon 4:4"]
+    map35 -> {map36 map37}
+    
+    map36 [label="36. DM-Diesel\nVs: Axon, 4:2+\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
+    map36 -> map38
+    
+    map38 [label="38. vCTF-Kargo\nVs: Krall, 5:4"]
+    map38 -> map39
+    
+    map39 [label="39. WAR-Serenity_Necris\nVs: Krall, 6:4"]
+    map39 -> map40
+    
+    map40 [label="40. WAR-Torlan\nVs: Krall, 6:4"]
+    map40 -> end
+    
+    map37 [label="37. WAR-Serenity\nVs: Axon, 4:4\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
+    map37 -> map41
+    
+    map41 [label="41. vCTF-Kargo\nVs: Krall, 6:4"]
+    map41 -> map42
+    
+    map42 [label="42. WAR-Torlan_Leviathan\nVs: Krall, 7:4"]
+    map42 -> end
+    
+    map33 [label="33. WAR-Serenity\nVs: Axon, 4:4"]
+    map33 -> map43
+    
+    map43 [label="43. vCTF-Suspense\nVs: Axon, 4:4"]
+    map43 -> map44
+    
+    map44 [label="44. WAR-Downtown\nVs: Axon 4:4\nEnemy nodes"]
+    map44 -> {map45 map46}
+    
+    map45 [label="45. DM-Defiance\nVs: Axon 4:4\nCard: Iron Guard Reinforcements(Barktooth)", fontcolor="red"]
+    map45 -> map47
+    
+    map47 [label="47. vCTF-Kargo\nVs: Krall, 6:4"]
+    map47 -> map48
+    
+    map48 [label="48. WAR-Serenity_Necris\nVs: Krall 6:6"]
+    map48 -> end
+    
+    map46 [label="46. DM-Diesel\nVs: Axon, 4:2+\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
+    map46 -> map49
+    
+    map49 [label="49. vCTF-Kargo\nVs: Krall 5:5"]
+    map49 -> map50
+    
+    map50 [label="50. WAR-Serenity_Necris\nVs: Krall 6:6"]
+    map50 -> end
+ 
     end [label="End of chapter"]
 }
