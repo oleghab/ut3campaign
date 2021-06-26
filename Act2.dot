@@ -50,7 +50,7 @@ digraph act2 {
     map19 [label="19. WAR-Serenity_Necris\nVs: Krall, 8:4"]
     map19 -> map20
     
-    map20 [label="20. WAR-Torlan\nVs: Liandri, 6:4"]
+    map20 [label="20. WAR-Torlan\nVs: Liandri, 6:4\nUncertain tank nodes"]
     map20 -> end
     
     map10 [label="10. vCTF-Suspense\nVs: Axon, 4:4"]
@@ -95,7 +95,7 @@ digraph act2 {
     map39 [label="39. WAR-Serenity_Necris\nVs: Krall, 6:4"]
     map39 -> map40
     
-    map40 [label="40. WAR-Torlan\nVs: Krall, 6:4\nEnemy nodes"]
+    map40 [label="40. WAR-Torlan\nVs: Krall, 6:4\nEnemy nodes\nUncertain tank nodes"]
     map40 -> end
     
     map37 [label="37. WAR-Serenity\nVs: Axon, 4:4\nCard: Iron Guard Reinforcements (Barktooth)", fontcolor="red"]
