@@ -1,179 +1,255 @@
 digraph act3 {
-    node[shape=none]
+    map1 [label="1. DM-Arsenal\nVs: Liandri, 4:4\nCard: Heavy armor", fontcolor="red"]
+    map1 -> {map2 map3}
     
-    map1 [label="DM-Arsenal\nEnemy: Liandri\nCard: Heavy armor", fontcolor="red"]
-    map1 -> {map2 map101}
+    map2 [label="2. DM-HeatRay\nVs: Liandri, 6:4\nDarkwalker: none"]
+    map2 -> {map4 map5}
     
-    map2 [label="DM-HeatRay\nEnemy: Liandri, 3:2\nDarkwalker: none"]
-    map2 -> {map102 map3}
+    map4 [label="4. WAR-Dusk\nVs: Liandri, 6:4"]
+    map4 -> map6
     
-    map102 [label="WAR-Dusk\nEnemy: Liandri, 3:2"]
-    map102 -> map4
+    map6 [label="6. WAR-PowerSurge\nVs: Liandri, 6:4"]
+    map6 -> map7
     
-    map4 [label="WAR-PowerSurge\nEnemy: Liandri, 3:2"]
-    map4 -> fork3
+    map7 [label="7. CTF-Coret\nVs: Liandri, 4:4"]
+    map7 -> {map8 map9}
     
-    fork3 [label="CTF-Coret\nEnemy: Liandri"]
-    fork3 -> {fork4 map6}
+    map8 [label="8. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: locked"]
+    map8 -> {map10 map11}
     
-    fork4 [label="DM-HeatRay\nEnemy: Krall, 3:2\nDarkwalker: locked"]
-    fork4 -> {map0 map8}
+    map10 [label="10. WAR-Islander\nVs: Liandri, 4:4"]
+    map10 -> map12
     
-    map0 [label="WAR-Islander\nEnemy: Liandri"]
-    map0 -> fork5
+    map12 [label="12. CTF-Strident\nVs: Liandri, 4:4\nCard: Liandri Reinforcements", fontcolor="red"]
+    map12 -> {map13 map14}
     
-    fork5 [label="CTF-Strident\nEnemy: Liandri\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork5 -> {map10 map11}
+    map13 [label="13. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map13 -> end
         
-    map11 [label="vCTF-Containment\nEnemy: Liandri\nDarkwalker: contained"]
-    map11 -> end
+    map14 [label="14. vCTF-Containment\nVs: Liandri 4:4\nDarkwalker: contained"]
+    map14 -> end
     
-    map8 [label="vCTF-Containment\nEnemy: Krall\nDarkwalker: released"]
-    map8 -> fork6
+    map11 [label="11. vCTF-Containment\nVs: Krall, 4:4\nDarkwalker: released"]
+    map11 -> map15
     
-    fork6 [label="CTF-Strident\nEnemy: Liandri\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork6 -> {map12 map10}
+    map15 [label="15. CTF-Strident\nVs: Liandri, 4:4\nCard: Liandri Reinforcements", fontcolor="red"]
+    map15 -> {map16 map17}
     
-    map12 [label="WAR-Islander"]
-    map12 -> end
-        
-    map6 [label="DM-CarbonFire\nEnemy: Liandri"]
-    map6 -> map14
+    map16 [label="16. WAR-Islander\nVs: Krall, 4:4\nSpoiler briefing"]
+    map16 -> end
     
-    map14 [label="vCTF-Containment\nEnemy: Liandri\nDarkwalker: contained"]
-    map14 -> fork7
+    map17 [label="17. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map17 -> end
     
-    fork7 [label="WAR-Islander"]
-    fork7 -> {fork8 map18}
+    map9 [label="9. DM-CarbonFire\nVs: Liandri, 4:4"]
+    map9 -> map18
     
-    fork8 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork8 -> {map19 map18}
-        
-    map18 [label="DM-Gateway\nEnemy: Liandri\nCharacter: Matrix", fontcolor="red"]
+    map18 [label="18. vCTF-Containment\nVs: Liandri, 4:4\nDarkwalker: contained"]
     map18 -> map19
     
-    map19 [label="DM-HeatRay\nEnemy: Krall\nDarkwalker: free"]
-    map19 -> end
+    map19 [label="19. WAR-Islander\nVs: Liandri, 4:4"]
+    map19 -> {map20 map21}
     
-    map3 [label="WAR-Islander\nEnemy: Liandri"]
-    map3 -> fork9
+    map20 [label="20. CTF-Strident\nVs: Liandri, 4:4\nCard: Liandri Reinforcements\nBriefing about Krall?", fontcolor="red"]
+    map20 -> {map22 map23}
     
-    fork9 [label="WAR-Dusk\nEnemy: Liandri, 3:2"]
-    fork9 -> {map22 fork13}
+    map22 [label="22. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: available"]
+    map22 -> end
     
-    map22 [label="WAR-PowerSurge\nEnemy: Krall, 2:1"]
-    map22 -> fork10
+    map23 [label="23. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map23 -> map24
     
-    fork10 [label="CTF-Coret\nEnemy: Liandri"]
-    fork10 -> {map25 map26}
+    map24 [label="24. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: available"]
+    map24 -> end
     
-    map25 [label="vCTF-Containment\nEnemy: Liandri\nDarkwalker: contained"]
-    map25 -> map27
+    map21 [label="21. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map21 -> map25
     
-    map27 [label="DM-HeatRay\nEnemy: Krall, 3:2\nDarkwalker: free"]    
-    map27 -> fork12
-
-    map26 [label="DM-HeatRay\nEnemy: Krall, 3:2\nDarkwalker: locked"]
-    map26 -> fork12
+    map25 [label="25. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: available"]
+    map25 -> end
     
-    fork12 [label="CTF-Strident\nEnemy: Krall\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork12 -> {map32 map10}
+    map5 [label="5. WAR-Islander\nVs: Liandri, 4:4"]
+    map5 -> map26
     
-    map32 [label="DM-CarbonFire\nEnemy: Liandri"]
-    map32 -> end
+    map26 [label="26. WAR-Dusk\nVs: Liandri, 6:4"]
+    map26 -> {map27 map28}
     
-    map10 [label="DM-Gateway\nEnemy: Liandri, 2:1\nCharacter: Matrix", fontcolor="red"]
-    map10 -> end
-        
-    fork13 [label="CTF-Coret\nEnemy: Liandri"]
-    fork13 -> {map34 map35}
+    map27 [label="27. WAR-PowerSurge\nVs: Krall, 8:4"]
+    map27 -> map29
     
-    map34 [label="DM-HeatRay\nDarkwalker: locked"]
-    map34 -> fork14
+    map29 [label="29. CTF-Coret\nVS: Liandri, 4:4"]
+    map29 -> {map30 map32}
     
-    fork14 [label="DM-CarbonFire"]
-    fork14 -> {fork15 map40}
+    map30 [label="30. vCTF-Containment\nVs: Liandri, 4:4\nDarkwalker: contained"]
+    map30 -> map31
     
-    fork15 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork15 -> {map41 map40}
-        
-    map40 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map40 -> map41
+    map31 [label="31. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: available"]
+    map31 -> map33
     
-    map41 [label="vCTF-Containment\nDarkwalker: contained"]
-    map41 -> end
-
-    map35 [label="vCTF-Containment\nDarkwalker: contained"]
-    map35 -> map43
-
-    map43 [label="DM-HeatRay\nDarkwalker: free"]
-    map43 -> fork16
+    map33 [label="33. CTF-Strident\nVs: Krall, 4:4\nCard: Liandri Reinforcements", fontcolor="red"]
+    map33 -> {map34 map35}
     
-    fork16 [label="DM-CarbonFire"]
-    fork16 -> {map46 map45}
-        
-    map45 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
+    map34 [label="34. DM-CarbonFire\nVs: Liandri, 4:4"]
+    map34 -> end
+    
+    map35 [label="35. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map35 -> end
+    
+    map32 [label="32. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: locked"]
+    map32 -> map36
+    
+    map36 [label="36. CTF-Strident\nVs: Krall, 4:4\nCard: Liandri Reinforcements", fontcolor="red"]
+    map36 -> {map37 map38}
+    
+    map37 [label="37. DM-CarbonFire\nVs: Liandri, 4:4"]
+    map37 -> end
+    
+    map38 [label="38. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map38 -> end
+    
+    map28 [label="28. CTF-Coret\nVs: Liandri, 4:4"]
+    map28 -> {map39 map40}
+    
+    map39 [label="39. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: locked"]
+    map39 -> map41 
+    
+    map41 [label="41. DM-CarbonFire\nVs: Liandri 4:4"]
+    map41 -> {map42 map43}
+    
+    map42 [label="42. CTF-Strident\nVs: Liandri, 4:4\nCard: Liandri Reinforcements", fontcolor="red"]
+    map42 -> {map44 map45}
+    
+    map44 [label="44. vCTF-Containment\nVs: Liandri, 4:4\nDarkwalker: contained"]
+    map44 -> end
+    
+    map45 [label="45. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
     map45 -> map46
     
-    map46 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
+    map46 [label="46. vCTF-Containment\nVs: Liandri, 4:4\nDarkwalker: contained"]
     map46 -> end
     
-    map101 [label="WAR-Dusk\nEnemy: Liandri, 3:2"]
-    map101 -> fork17
+    map43 [label="43. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map43 -> map47
     
-    fork17 [label="WAR-PowerSurge\nEnemy: Liandri"]
-    fork17 -> {map47 map48}
-     
-    map47 [label="DM-HeatRay\nEnemy: Liandri\nDarkwalker: none"]
-    map47 -> map49
+    map47 [label="47. vCTF-Containment\nVs: Liandri, 4:4\nDarkwalker: contained"]
+    map47 -> end
     
-    map49 [label="CTF-Coret"]
-    map49 -> fork18
+    map40 [label="40. vCTF-Containment\nVs: Liandri, 4:4\nDarkwalker: contained"]
+    map40 -> map48
     
-    fork18 [label="DM-CarbonFire"]
-    fork18 -> {map50 map51}
+    map48 [label="48. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: available"]
+    map48 -> map49
     
-    map50 [label="vCTF-Containment\nEnemy: Liandri\nDarkwalker: contained"]
-    map50 -> map52
+    map49 [label="49. DM-CarbonFire\nVs: Liandri, 4:4"]
+    map49 -> {map50 map51}
     
-    map52 [label="WAR-Islander"]
-    map52 -> fork8  
+    map50 [label="50. CTF-Strident\nVs: Liandri, 4:4\nCard: Liandri Reinforcements", fontcolor="red"]
+    map50 -> end
     
-    map51 [label="WAR-Islander\nEnemy: Liandri"]
-    map51 -> map56
+    map51 [label="51. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map51 -> map52
     
-    map56 [label="vCTF-Containment\nEnemy: Krall\nDarkwalker: released"]
-    map56 -> fork8
+    map52 [label="52. CTF-Strident\nVs: Liandri, 4:4\nCard: Liandri Reinforcements", fontcolor="red"]
+    map52 -> end
     
-    map48 [label="WAR-Islander\nEnemy: Liandri"]
-    map48 -> map60
+    map3 [label="3. WAR-Dusk\nVs: Liandri, 6:4"]
+    map3 -> map53
     
-    map60 [label="DM-HeatRay\nDarkwalker: locked"]
-    map60 -> fork21
+    map53 [label="53. WAR-PowerSurge\nVs: Liandri, 4:4"]
+    map53 -> {map54 map55}
     
-    fork21 [label="CTF-Coret"]
-    fork21 -> {map61 map62}
+    map54 [label="54. DM-HeatRay\nVs: Liandri, 4:4\nDarkwalker: none"]
+    map54 -> map56
     
-    map61 [label="vCTF-Containment\nDarkwalker: contained"]
-    map61 -> fork22
+    map56 [label="56. CTF-Coret\nVs: Liandri, 4:4"]
+    map56 -> map57
     
-    fork22 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    fork22 -> {fork23 map73}
+    map57 [label="57. DM-CarbonFire\nVs: Liandri, 4:4"]
+    map57 -> {map58 map59}
     
-    fork23 [label="DM-CarbonFire"]
-    fork23 -> {map74 map73}
+    map58 [label="58. vCTF-Containment\nVs: Liandri, 4:4\nDarkwalker: contained"]
+    map58 -> map60
     
-    map62 [label="DM-CarbonFire"]
-    map62 -> map71
+    map60 [label="60. WAR-Islander\nVs: Liandri, 4:4"]
+    map60 -> map61
     
-    map71 [label="CTF-Strident\nCard: Liandri Reinforcements", fontcolor="red"]
-    map71 -> {map74 map73}
-        
-    map73 [label="DM-Gateway\nCharacter: Matrix", fontcolor="red"]
-    map73 -> map74
-
-    map74 [label="vCTF-Containment\nDarkwalker: released"]
-    map74 -> end
+    map61 [label="61. CTF-Strident\nVs: Krall, 4:4\nCard: Liandri Reinforcements", fontcolor="red"]
+    map61 -> {map62 map63}
+    
+    map62 [label="62. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: available"]
+    map62 -> end
+    
+    map63 [label="63. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map63 -> map64
+    
+    map64 [label="64. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: available"]
+    map64 -> end
+    
+    map59 [label="59. WAR-Islander\nVs: Liandri, 4:4"]
+    map59 -> map65
+    
+    map65 [label="65. vCTF-Containment\nVs: Krall, 4:4\nDarkwalker: released"]
+    map65 -> map66
+    
+    map66 [label="66. CTF-Strident\nVs: Krall, 4:4\nCard: Liandri Reinforcements", fontcolor="red"]
+    map66 -> {map67 map68}
+    
+    map67 [label="67. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: available"]
+    map67 -> end
+    
+    map68 [label="68. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map68 -> map69
+    
+    map69 [label="69. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: available"]
+    map69 -> end
+    
+    map55 [label="55. WAR-Islander\nVs: Liandri, 4:4"]
+    map55 -> map70
+    
+    map70 [label="70. DM-HeatRay\nVs: Krall, 6:4\nDarkwalker: locked"]
+    map70 -> map71
+    
+    map71 [label="71. CTF-Coret\nVs: Liandri, 4:4"]
+    map71 -> {map72 map73}
+    
+    map72 [label="72. vCTF-Containment\nVs: Liandri, 4:4\nDarkwalker: contained"]
+    map72 -> map74
+    
+    map74 [label="74. CTF-Strident\nVs: Liandri, 4:4\nCard: Liandri Reinforcements", fontcolor="red"]
+    map74 -> {map75 map76}
+    
+    map75 [label="75. DM-CarbonFire\nVs: Liandri 4:4"]
+    map75 -> {map77 map78}
+    
+    map77 [label="77. vCTF-Containment\nVs: Krall, 6:4\nDarkwalker: released"]
+    map77 -> end
+    
+    map78 [label="78. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map78 -> map79
+    
+    map79 [label="79. vCTF-Containment\nVs: Krall, 6:4\nDarkwalker: released"]
+    map79 -> end
+    
+    map76 [label="76. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map76 -> map80
+    
+    map80 [label="80. vCTF-Containment\nVs: Krall, 6:4\nDarkwalker: released"]
+    map80 -> end
+    
+    map73 [label="73. DM-CarbonFire\nVs: Liandri 4:4"]
+    map73 -> map81
+    
+    map81 [label="81. CTF-Strident\nVs: Liandri, 4:4\nCard: Liandri Reinforcements", fontcolor="red"]
+    map81 -> {map82 map83}
+    
+    map82 [label="82. vCTF-Containment\nVs: Krall, 6:4\nDarkwalker: released"]
+    map82 -> end
+    
+    map83 [label="83. DM-Gateway\nVs: Liandri, 4:2+\nCharacter: Matrix", fontcolor="red"]
+    map83 -> map84
+    
+    map84 [label="84. vCTF-Containment\nVs: Krall, 6:4\nDarkwalker: released"]
+    map84 -> end
     
     end [label="End of chapter"]
 }
