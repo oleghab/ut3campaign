@@ -1,4 +1,328 @@
 digraph act4 {
+    map1 [label="1. WAR-Islander_Necris\nVs: Necris, 4:4\nCharacter: Kragoth, Damian, Malakai", fontcolor="red"]
+    map1 -> map2
+    
+    map2 [label="2. WAR-MarketDistrict\nVs: Necris+Krall, 2+2:4"]
+    map2 -> {map3 map4}
+    
+    map3 [label="3. DM-ShangriLa\nVs: Krall+Necris, 4+1:4"]
+    map3 -> {map5 map6}
+    
+    map5 [label="5. vCTF-Corruption\nVs: Krall+Necris, 4+2:4"]
+    map5 -> {map7 map8}
+    
+    map7 [label="7. DM-Deck\nVs: Krall, 4:2\nCharacter: Scythe", fontcolor="red"]
+    map7 -> {map9 map10}
+    
+    map9 [label="9. WAR-Torlan_Necris\nVs: Krall+Necris, 4+2:4"]
+    map9 -> {map11 map12}
+    
+    map11 [label="11. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map11 -> map13
+    
+    map13 [label="13. WAR-Avalanche\nVs: Necris, 6:4"]
+    map13 -> map14
+    
+    map14 [label="14. DM-Deimos\nVs: Necris, 4:4"]
+    map14 -> end
+    
+    map12 [label="12. DM-Biohazard\nVs: Necris+Krall, 2+2:2"]
+    map12 -> map15
+    
+    map15 [label="15. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map15 -> map16
+    
+    map16 [label="16. WAR-Avalanche\nVs: Necris, 6:4"]
+    map16 -> map17 
+
+    map17 [label="17. DM-Deimos\nVs: Necris, 4:4"]
+    map17 -> end
+    
+    map10 [label="10. vCTF-Suspense\nVs: Necris, 5:4"]
+    map10 -> {map18 map19}
+    
+    map18 [label="18. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map18 -> map20
+    
+    map20 [label="20. WAR-Avalanche\nVs: Necris, 6:4"]
+    map20 -> map21
+
+    map21 [label="21. DM-Deimos\nVs: Necris, 4:4"]
+    map21 -> end
+    
+    map19 [label="19. DM-Biohazard\nVs: Necris+Krall, 2+2:2"]
+    map19 -> map22
+    
+    map22 [label="22. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map22 -> map23
+    
+    map23 [label="23. WAR-Avalanche\nVs: Necris, 6:4"]
+    map23 -> map24
+
+    map24 [label="24. DM-Deimos\nVs: Necris, 4:4"]
+    map24 -> end
+    
+    map8 [label="8. vCTF-Suspense\nVs: Necris, 5:4"]
+    map8 -> {map25 map26}
+    
+    map25 [label="25. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map25 -> map27
+
+    map27 [label="27. WAR-Avalanche\nVs: Necris, 6:4"]    
+    map27 -> map28
+    
+    map28 [label="28. DM-Deimos\nVs: Necris, 4:4"]
+    map28 -> end
+
+    map26 [label="26. DM-Biohazard\nVs: Necris+Krall, 2+2:2"]
+    map26 -> map29
+    
+    map29 [label="29. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map29 -> map30
+    
+    map30 [label="30. WAR-Avalanche\nVs: Necris, 6:4"]    
+    map30 -> map31
+    
+    map31 [label="31. DM-Deimos\nVs: Necris, 4:4"]
+    map31 -> end
+    
+    map6 [label="6. DM-Defiance\nVs: Krall+Necris, 3+1:4"]
+    map6 -> {map32 map33}
+    
+    map32 [label="32. DM-Deck\nVs: Krall, 4:2(+2)\nCharacter: Scythe", fontcolor="red"]
+    map32 -> {map34 map35}
+    
+    map34 [label="34. WAR-Torlan_Necris\nVs: Krall+Necris, 4+2:4"]
+    map34 -> {map36 map37}
+    
+    map36 [label="36. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map36 -> map38
+    
+    map38 [label="38. WAR-Avalanche\nVs: Necris, 6:4"]
+    map38 -> map39
+    
+    map39 [label="39. DM-Deimos\nVs: Necris, 4:4"]
+    map39 -> end
+    
+    map37 [label="37. DM-Biohazard\nVs: Necris+Krall, 2+2:2(+2)"]
+    map37 -> map40 
+    
+    map40 [label="40. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map40 -> map41
+    
+    map41 [label="41. WAR-Avalanche\nVs: Necris, 6:4"]
+    map41 -> map42
+    
+    map42 [label="42. DM-Deimos\nVs: Necris, 4:4"]
+    map42 -> end
+    
+    map35 [label="35. vCTF-Suspense\nVs: Necris, 5:4"]
+    map35 -> {map43 map44}
+    
+    map43 [label="43. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map43 -> map45
+    
+    map45 [label="45. WAR-Avalanche\nVs: Necris, 6:4"]
+    map45 -> map46
+    
+    map46 [label="46. DM-Deimos\nVs: Necris, 4:4"]
+    map46 -> end
+    
+    map44 [label="44. DM-Biohazard\nVs: Necris+Krall, 2+2:2(+2)"]
+    map44 -> map47
+    
+    map47 [label="47. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map47 -> map48
+    
+    map48 [label="48. WAR-Avalanche\nVs: Necris, 6:4"]
+    map48 -> map49
+    
+    map49 [label="49. DM-Deimos\nVs: Necris, 4:4"]
+    map49 -> end
+    
+    map33 [label="33. WAR-Torlan_Necris\nVs: Krall+Necris, 4+2:4"]
+    map33 -> {map50 map51}
+    
+    map50 [label="50. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map50 -> map52
+    
+    map52 [label="52. WAR-Avalanche\nVs: Necris, 6:4"]
+    map52 -> map53
+    
+    map53 [label="53. DM-Deimos\nVs: Necris, 4:4"]
+    map53 -> end
+    
+    map51 [label="51. DM-Biohazard\nVs: Necris+Krall, 2+2:2(+2)"]
+    map51 -> map54
+
+    map54 [label="54. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map54 -> map55
+    
+    map55 [label="55. WAR-Avalanche\nVs: Necris, 6:4"]
+    map55 -> map56
+    
+    map56 [label="56. DM-Deimos\nVs: Necris, 4:4"]
+    map56 -> end
+    
+    map4 [label="4. vCTF-Corruption\nVs: Krall+Necris, 3+1:4"]
+    map4 -> {map57 map58}
+
+    map57 [label="57. vCTF-Suspense\nVs: Krall+Necris, 4+1:4"]
+    map57 -> {map59 map60}
+    
+    map59 [label="59. WAR-Torlan_Necris\nVs: Krall+Necris, 4+2:4"]
+    map59 -> {map61 map62}
+    
+    map61 [label="61. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map61 -> map63
+    
+    map63 [label="63. WAR-Avalanche\nVs: Necris, 6:4"]
+    map63 -> map64
+    
+    map64 [label="64. DM-Deimos\nVs: Necris, 4:4"]
+    map64 -> end
+    
+    map62 [label="62. DM-Biohazard\nVs: Necris+Krall, 2+2:2(+2)"]
+    map62 -> map65
+    
+    map65 [label="65. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map65 -> map66
+    
+    map66 [label="66. WAR-Avalanche\nVs: Necris, 6:4"]
+    map66 -> map67
+    
+    map67 [label="67. DM-Deimos\nVs: Necris, 4:4"]
+    map67 -> end
+    
+    map60 [label="60. DM-Deck\nVs: Krall, 4:2(+2)\nCharacter: Scythe", fontcolor="red"]
+    map60 -> {map68 map69}
+    
+    map68 [label="68. DM-Defiance\nVs: Necris+Krall, 2+2:4"]
+    map68 -> {map70 map71}
+    
+    map70 [label="70. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map70 -> map72
+    
+    map72 [label="72. WAR-Avalanche\nVs: Necris, 6:4"]
+    map72 -> map73
+    
+    map73 [label="73. DM-Deimos\nVs: Necris, 4:4"]
+    map73 -> end
+    
+    map71 [label="71. DM-Biohazard\nVs: Necris+Krall, 2+2:2(+2)"]
+    map71 -> map74
+    
+    map74 [label="74. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map74 -> map75
+    
+    map75 [label="75. WAR-Avalanche\nVs: Necris, 6:4"]
+    map75 -> map76
+    
+    map76 [label="76. DM-Deimos\nVs: Necris, 4:4"]
+    map76 -> end
+    
+    map69 [label="69. WAR-Torlan_Necris\nVs: Krall+Necris, 4+2:4"]
+    map69 -> {map77 map78}
+    
+    map77 [label="77. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map77 -> map79
+    
+    map79 [label="79. WAR-Avalanche\nVs: Necris, 6:4"]
+    map79 -> map80
+    
+    map80 [label="80. DM-Deimos\nVs: Necris, 4:4"]
+    map80 -> end
+    
+    map78 [label="78. DM-Biohazard\nVs: Necris+Krall, 2+2:2(+2)"]
+    map78 -> map81
+    
+    map81 [label="81. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map81 -> map82
+    
+    map82 [label="82. WAR-Avalanche\nVs: Necris, 6:4"]
+    map82 -> map83
+    
+    map83 [label="83. DM-Deimos\nVs: Necris, 4:4"]
+    map83 -> end
+
+    map58 [label="58. DM-ShangriLa\nVs: Krall+Necris, 3+1:4"]
+    map58 -> {map84 map85}
+
+    map84 [label="84. DM-Defiance\nVs: Necris+Krall, 2+2:4"]
+    map84 -> {map86 map87}
+    
+    map86 [label="86. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map86 -> map88
+    
+    map88 [label="88. WAR-Avalanche\nVs: Necris, 6:4"]
+    map88 -> map89
+    
+    map89 [label="89. DM-Deimos\nVs: Necris, 4:4"]
+    map89 -> end
+    
+    map87 [label="87. DM-Biohazard\nVs: Necris+Krall, 2+2:2(+2)"]
+    map87 -> map90
+    
+    map90 [label="90. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map90 -> map91
+    
+    map91 [label="91. WAR-Avalanche\nVs: Necris, 6:4"]
+    map91 -> map92
+    
+    map92 [label="92. DM-Deimos\nVs: Necris, 4:4"]
+    map92 -> end
+    
+    map85 [label="85. DM-Deck\nVs: Krall, 4:2(+2)\nCharacter: Scythe", fontcolor="red"]
+    map85 -> {map93 map94}
+    
+    map93 [label="93. DM-Defiance\nVs: Necris+Krall, 2+2:4"]
+    map93 -> {map95 map96}
+    
+    map95 [label="95. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map95 -> map97
+    
+    map97 [label="97. WAR-Avalanche\nVs: Necris, 6:4"]
+    map97 -> map98
+    
+    map98 [label="98. DM-Deimos\nVs: Necris, 4:4"]
+    map98 -> end
+    
+    map96 [label="96. DM-Biohazard\nVs: Necris+Krall, 2+2:2(+2)"]
+    map96 -> map99
+    
+    map99 [label="99. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map99 -> map100
+    
+    map100 [label="100. WAR-Avalanche\nVs: Necris, 6:4"]
+    map100 -> map101
+    
+    map101 [label="101. DM-Deimos\nVs: Necris, 4:4"]
+    map101 -> end
+    
+    map94 [label="94. WAR-Torlan_Necris\nVs: Krall+Necris, 4+2:4"]
+    map94 -> {map102 map103}
+    
+    map102 [label="102. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map102 -> map104
+    
+    map104 [label="104. WAR-Avalanche\nVs: Necris, 6:4"]
+    map104 -> map105
+    
+    map105 [label="105. DM-Deimos\nVs: Necris, 4:4"]
+    map105 -> end
+    
+    map103 [label="103. DM-Biohazard\nVs: Necris+Krall, 2+2:2(+2)"]
+    map103 -> map106
+    
+    map106 [label="106. WAR-OnyxCoast\nVs: Necris, 5:4"]
+    map106 -> map107
+    
+    map107 [label="107. WAR-Avalanche\nVs: Necris, 6:4"]
+    map107 -> map108
+    
+    map108 [label="108. DM-Deimos\nVs: Necris, 4:4"]
+    map108 -> end
+
     node [shape=none]
 
     islander [label="WAR-Islander\nCharacter: Kragoth, Damian, Malakai", fontcolor="red"]
