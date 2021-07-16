@@ -1,4 +1,6 @@
 digraph act2 {
+    node [shape=none]
+
     map0 [label="0. DM-RisingSun\nVs: Jester(Ronin), FFA 2-4\nTutorial: Basics", fontcolor="blue"]
     map0 -> map1
     
