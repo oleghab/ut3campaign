@@ -36,11 +36,8 @@ digraph act2 {
     map13 -> {map14 map15}
     
     map14 [label="14. DM-Defiance\nVs: Axon, 4:4\nCard: Iron Guard Reinforcements(Barktooth)", fontcolor="red"]
-    map14 -> map16
+    map14 -> map41
     
-    map16 [label="16. vCTF-Kargo\nVs: Krall, 6:4"]
-    map16 -> map42
-        
     map15 [label="15. DM-Diesel\nVs: Axon, 4:2+\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
     map15 -> map18
     
