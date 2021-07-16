@@ -1,4 +1,6 @@
 digraph act5 {
+    node [shape=none]
+
     map1 [label="1. CTF-OmicronDawn\nVs: Necris, 4:4\nCharacter: Loque", fontcolor="red"]
     map1 -> map2
     
@@ -9,17 +11,8 @@ digraph act5 {
     map3 -> map5
     
     map5 [label="5. DM-Fearless\nVs: Necris, 2:2(+2)"]
-    map5 -> map6
-    
-    map6 [label="6. vCTF-Necropolis\nVs: Necris, 5:4\nCard: Instagib", fontcolor="red"]
-    map6 -> map7
-    
-    map7 [label="7. CTF-Vertebrae\nVs: Necris, 4:4"]
-    map7 -> map8
-    
-    map8 [label="8. WAR-Floodgate\nVs: Necris, 4:4"]
-    map8 -> mapX
-    
+    map5 -> map10
+
     map4 [label="4. DM-Fearless\nVs: Necris, 2:2(+2)"]
     map4 -> map9
     
@@ -36,35 +29,4 @@ digraph act5 {
     map12 -> mapX
 
     mapX [label="X. DM-Sentinel\nVs: Akasha(Necris), 1:1(+3) \nScore: 20\nCharacter: Akasha", fontcolor="red"]
-
-    node [shape=none]
-
-    map101 [label="CTF-OmicronDawn\nCharacter: Loque", fontcolor="red"]
-    map101 -> map102
-    
-    map102 [label="vCTF-Sandstorm"]
-    map102 -> {route51 route52}
-    
-    route51 [label="DM-Sanctuary"]
-    route51 -> map103
-    
-    map103 [label="DM-Fearless"]
-    map103 -> back5
-    
-    route52 [label="DM-Fearless"]
-    route52 -> map104
-    
-    map104 [label="DM-Sanctuary"]
-    map104 -> back5
-    
-    back5 [label="vCTF-Necropolis\nCard: Instagib", fontcolor="red"]
-    back5 -> map105
-    
-    map105 [label="CTF-Vertebrae"]
-    map105 -> map106
-    
-    map106 [label="WAR-Floodgate"]
-    map106 -> final
-    
-    final [label="DM-Sentinel\nCharacter: Akasha", fontcolor="red"]
 }
