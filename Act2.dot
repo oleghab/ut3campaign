@@ -1,10 +1,10 @@
 digraph act2 {
     node [shape=none]
 
-    map0 [label="0. DM-RisingSun\nVs: Jester(Ronin), FFA 2-4\nTutorial: Basics", fontcolor="blue"]
+    map0 [label="0. DM-RisingSun\nVs: Jester(Ronin), FFA 2(+2)\nTutorial: Basics", fontcolor="blue"]
     map0 -> map1
     
-    map1 [label="1. DM-ShangriLa\nVs: Axon, 4:4 - 4:6"]
+    map1 [label="1. DM-ShangriLa\nVs: Axon, 4:4(+2)"]
     map1 -> map2
     
     map2 [label="2. CTF-Reflection\nVs: Axon, 4:4\nTutorial: CTF", fontcolor="blue"]
@@ -40,7 +40,7 @@ digraph act2 {
     map14 [label="14. DM-Defiance\nVs: Axon, 4:4\nCard: Iron Guard Reinforcements(Barktooth)", fontcolor="red"]
     map14 -> map41
     
-    map15 [label="15. DM-Diesel\nVs: Axon, 4:2+\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
+    map15 [label="15. DM-Diesel\nVs: Axon, 4:2(+2)\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
     map15 -> map18
     
     map18 [label="18. vCTF-Kargo\nVs: Krall, 5:4"]
@@ -85,7 +85,7 @@ digraph act2 {
     map35 [label="35. DM-Defiance\nVs: Axon 4:4"]
     map35 -> {map36 map37}
     
-    map36 [label="36. DM-Diesel\nVs: Axon, 4:2+\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
+    map36 [label="36. DM-Diesel\nVs: Axon, 4:2(+2)\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
     map36 -> map38
     
     map38 [label="38. vCTF-Kargo\nVs: Krall, 5:4"]
@@ -121,7 +121,7 @@ digraph act2 {
     map47 [label="47. vCTF-Kargo\nVs: Krall, 6:4"]
     map47 -> map50
 
-    map46 [label="46. DM-Diesel\nVs: Axon, 4:2+\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
+    map46 [label="46. DM-Diesel\nVs: Axon, 4:2(+2)\nCharacter: Lauren\nCard: Iron Guard Reinforcements (Lauren)\nCard: Enhanced Respawners", fontcolor="red"]
     map46 -> map49
     
     map49 [label="49. vCTF-Kargo\nVs: Krall 5:5"]
